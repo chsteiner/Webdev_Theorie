@@ -19,6 +19,7 @@
         <div class="border-end bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading border-bottom bg-light">WebDev</div>
             <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#html">Was ist HTML?</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#css">Was ist CSS?</a>
                 <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Was ist das
                     Internet?</a> -->
@@ -76,6 +77,89 @@
             </nav>
             <!-- Page content-->
             <div class="container-fluid">
+                <div class="post">
+                    <h2 id="html">Was ist HTML?</h2>
+                    <p>May 2, 2022 by <a href="#">Georg Reiter</a></p>
+                    <hr>
+                    <p>HTML ist die Abkürzung für <em>hypertext markup language</em>. HTML ist – wie der Name schon sagt
+                        – keine
+                        Programmier-, sondern eine Auszeichnungssprache, mit der Webseiten und deren Inhalte
+                        strukturiert werden. Mit dem Markup wird Webbrowsern mitgeteilt, wie der Inhalt einer Webseite –
+                        z. B. Text und Bilder – dargestellt werden sollen. „Hypertext“ bezeichnet hierbei die Art und
+                        Weise, wie Nutzer*innen sich im World Wide Web bewegen: Durch das Klicken auf Hyperlinks werden
+                        sie zu anderen Seiten weitergeleitet, „hyper“ meint hierbei, dass dieses Weiterbewegen nicht
+                        linear ist, sondern dass sich die Nutzer*innen zu beliebigen Stellen weiterbewegen können.</p>
+                    <h3>Was ist ein HTML-Dokument?</h3>
+                    <p>Ein HTML-Dokument ist im Wesentlichen ein Textdokument, dass einer bestimmten, leicht zu
+                        erlernenden Syntax und Bennenungskonventionen folgt, die Computern und Webservern anzeigen, dass
+                        es sich eben um HTML-Dokument handelt und es auch so interpretiert werden soll. Die wichtigste
+                        Konvention ist, dass zu Beginn des Textdokuments der Dokumenttyp „HTML“ deklariert wird:
+                        <code>&lt;!DOCTYPE html&gt;</code>. Ebenfalls wichtig ist, dass das Textdokument dann mit der
+                        Endung <em>.html</em>
+                        abgespeichert wird. Somit ist das Dokument von „innen“ und „außen“ als HTML-Dokument erkennbar.
+                    </p>
+                    <h3>Aufbau von HTML-Dokumenten</h3>
+                    <h4>Elemente</h4>
+                    <p>HTML-Dokumente bestehen in der Regel aus einer Reihe von sogenannten Elementen, mit denen
+                        Inhalte umschlossen werden. Ein Element besteht aus 3 Teilen: 1.) Dem öffnenden Tag, 2.) dem
+                        Inhalt
+                        und 3.) dem schließendenden Tag.</p>
+                    <ol>
+                        <li>Öffnendes Tag: Das öffnende Tag beginnt mit einer Spitzklammer, dieser folgt der
+                            Elementname, danach folgt wieder einer Spitzklammer.</li>
+                        <li>Inhalt: Dieser wird von den öffnenden und schließenden Tags umschlossen.</li>
+                        <li>Schließendes Tag: Wie das öffnende Tag beginnt das schließende Tag ebenfalls mit einer
+                            Spitzklammer, danach folgt allerdings ein Slash. Es endet ebenfalls mit einer Spitzklammer.
+                        </li>
+                    </ol>
+                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png"
+                        class="img-fluid" alt="Bild, das ein HTML-Element mit Tags darstellt">
+                    <p>Elemente können auch verschachtelt werden, ebenfalls gibt es einige wenige leere Elemente wie z.
+                        B. <code>&lt;img&gt;</code>. HTML-Elemente können ebenfalls Attribute haben. Die Attribute
+                        (beispielsweise „style“,
+                        „id“ und „class“) werden im öffnenden Tag festgelegt. Sie haben Werte, die dazu dienen, das
+                        Element näher zu spezifizieren. Ebenfalls eröffnen sie die Möglichkeit, es zielgenau über CSS zu
+                        stylen oder es mittels JavaScript zu manipulieren.</p>
+                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"
+                        class="img-fluid" alt="Bild, das ein HTML-Element Attributen zeigt">
+                    <p>Elemente werden miteinander kombiniert – so entsteht eine HTML-Seite. Betrachten wir folgendes
+                        basales Beispiel:</p>
+                    <img src="https://i.imgur.com/pdgF1AX.png" class="img-fluid"
+                        alt="Bild, ein basales HTML-Dokument zeigt">
+
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html&gt;</code>: Hiermit wird der Dokumenttyp deklariert, dies ist
+                            obligatorisch und auch notwendig, damit sich das Dokument richtig verhält.</li>
+                        <li><code>&lt;html&gt;&lt;/html&gt;</code>: Das HTML-Element, oft auch Wurzelelement genannt,
+                            umschließt den Inhalt der gesamten Webseite.</li>
+                        <li><code>&lt;head&gt;&lt;/head&gt;</code>: Im Head-Element wird all das abgelegt, das nicht
+                            Inhalt der Webseite ist. Darunter fallen z. B. Keywords, die von Suchmaschinen gefunden
+                            werden können, die Beschreibung der Webseite oder Links auf Stylesheets.</li>
+                        <li><code>&lt;meta charset="utf-8"&gt;</code>: Hiermit wird der Zeichensatz des Dokuments auf
+                            UTF-8 gestellt, was empfohlen ist, weil damit die meisten Zeichen der meisten Sprachen
+                            dargestellt werden können.</li>
+                        <li><code>&lt;title>&lt;/title&gt;</code>: Mit dem Title-Element wird der Titel des Dokuments
+                            festgelegt, der z. B. im Tab aufscheint.</li>
+                        <li><code>&lt;body>&lt;/body&gt;</code>: Das Body-Element umschließt all den Inhalt, den
+                            Nutzer*innen der Webseite sehen sollen, z. B. Texte, Videos, Audiodateien usw.</li>
+                    </ul>
+                    <h3>HTML, CSS und JavaScript</h3>
+                    <p>Wie bereits eingangs erwähnt, legt HTML hauptsächlich die Struktur von Webseiten fest. Damit
+                        Webseiten auch noch gut aussehen bzw. interaktiv sind, müssen CSS und JavaScript verwendet
+                        werden. Häufig findet sich bei der Definition des Zusammenspiels dieser dreier Elemente der
+                        folgende Vergleich: HTML ist das Gerüst eines Hauses, CSS die Fassade und Inneneinrichtung und
+                        JavaScript die Strom- und Wasserleitungen, die das Haus erst bewohnbar machen. </p>
+                    <h3>Verwendete Quellen</h3>
+                    <ul>
+                        <li><a
+                                href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning">https://www.freecodecamp.org/news/what-is-html-definition-and-meaning</a>
+                        </li>
+                        <li><a
+                                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics</a>
+                        </li>
+
+                    </ul>
+                </div>
                 <div class="post">
                     <h2 id="css">Was ist CSS?</h2>
                     <p>May 3, 2022 by <a href="#">Viktoria Köhnlein</a></p>
@@ -644,89 +728,7 @@
                         <li><a href="https://getuikit.com/" target="_blank" rel="noopener noreferrer">UIKit</a></li>
                     </ul>
                 </div>
-                <div class="post">
-                    <h2 id="html">Was ist HTML?</h2>
-                    <p>May 2, 2022 by <a href="#">Georg Reiter</a></p>
-                    <hr>
-                    <p>HTML ist die Abkürzung für <em>hypertext markup language</em>. HTML ist – wie der Name schon sagt
-                        – keine
-                        Programmier-, sondern eine Auszeichnungssprache, mit der Webseiten und deren Inhalte
-                        strukturiert werden. Mit dem Markup wird Webbrowsern mitgeteilt, wie der Inhalt einer Webseite –
-                        z. B. Text und Bilder – dargestellt werden sollen. „Hypertext“ bezeichnet hierbei die Art und
-                        Weise, wie Nutzer*innen sich im World Wide Web bewegen: Durch das Klicken auf Hyperlinks werden
-                        sie zu anderen Seiten weitergeleitet, „hyper“ meint hierbei, dass dieses Weiterbewegen nicht
-                        linear ist, sondern dass sich die Nutzer*innen zu beliebigen Stellen weiterbewegen können.</p>
-                    <h3>Was ist ein HTML-Dokument?</h3>
-                    <p>Ein HTML-Dokument ist im Wesentlichen ein Textdokument, dass einer bestimmten, leicht zu
-                        erlernenden Syntax und Bennenungskonventionen folgt, die Computern und Webservern anzeigen, dass
-                        es sich eben um HTML-Dokument handelt und es auch so interpretiert werden soll. Die wichtigste
-                        Konvention ist, dass zu Beginn des Textdokuments der Dokumenttyp „HTML“ deklariert wird:
-                        <code>&lt;!DOCTYPE html&gt;</code>. Ebenfalls wichtig ist, dass das Textdokument dann mit der
-                        Endung <em>.html</em>
-                        abgespeichert wird. Somit ist das Dokument von „innen“ und „außen“ als HTML-Dokument erkennbar.
-                    </p>
-                    <h3>Aufbau von HTML-Dokumenten</h3>
-                    <h4>Elemente</h4>
-                    <p>HTML-Dokumente bestehen in der Regel aus einer Reihe von sogenannten Elementen, mit denen
-                        Inhalte umschlossen werden. Ein Element besteht aus 3 Teilen: 1.) Dem öffnenden Tag, 2.) dem
-                        Inhalt
-                        und 3.) dem schließendenden Tag.</p>
-                    <ol>
-                        <li>Öffnendes Tag: Das öffnende Tag beginnt mit einer Spitzklammer, dieser folgt der
-                            Elementname, danach folgt wieder einer Spitzklammer.</li>
-                        <li>Inhalt: Dieser wird von den öffnenden und schließenden Tags umschlossen.</li>
-                        <li>Schließendes Tag: Wie das öffnende Tag beginnt das schließende Tag ebenfalls mit einer
-                            Spitzklammer, danach folgt allerdings ein Slash. Es endet ebenfalls mit einer Spitzklammer.
-                        </li>
-                    </ol>
-                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png"
-                        class="img-fluid" alt="Bild, das ein HTML-Element mit Tags darstellt">
-                    <p>Elemente können auch verschachtelt werden, ebenfalls gibt es einige wenige leere Elemente wie z.
-                        B. <code>&lt;img&gt;</code>. HTML-Elemente können ebenfalls Attribute haben. Die Attribute
-                        (beispielsweise „style“,
-                        „id“ und „class“) werden im öffnenden Tag festgelegt. Sie haben Werte, die dazu dienen, das
-                        Element näher zu spezifizieren. Ebenfalls eröffnen sie die Möglichkeit, es zielgenau über CSS zu
-                        stylen oder es mittels JavaScript zu manipulieren.</p>
-                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"
-                        class="img-fluid" alt="Bild, das ein HTML-Element Attributen zeigt">
-                    <p>Elemente werden miteinander kombiniert – so entsteht eine HTML-Seite. Betrachten wir folgendes
-                        basales Beispiel:</p>
-                    <img src="https://i.imgur.com/pdgF1AX.png" class="img-fluid"
-                        alt="Bild, ein basales HTML-Dokument zeigt">
-
-                    <ul>
-                        <li><code>&lt;!DOCTYPE html&gt;</code>: Hiermit wird der Dokumenttyp deklariert, dies ist
-                            obligatorisch und auch notwendig, damit sich das Dokument richtig verhält.</li>
-                        <li><code>&lt;html&gt;&lt;/html&gt;</code>: Das HTML-Element, oft auch Wurzelelement genannt,
-                            umschließt den Inhalt der gesamten Webseite.</li>
-                        <li><code>&lt;head&gt;&lt;/head&gt;</code>: Im Head-Element wird all das abgelegt, das nicht
-                            Inhalt der Webseite ist. Darunter fallen z. B. Keywords, die von Suchmaschinen gefunden
-                            werden können, die Beschreibung der Webseite oder Links auf Stylesheets.</li>
-                        <li><code>&lt;meta charset="utf-8"&gt;</code>: Hiermit wird der Zeichensatz des Dokuments auf
-                            UTF-8 gestellt, was empfohlen ist, weil damit die meisten Zeichen der meisten Sprachen
-                            dargestellt werden können.</li>
-                        <li><code>&lt;title>&lt;/title&gt;</code>: Mit dem Title-Element wird der Titel des Dokuments
-                            festgelegt, der z. B. im Tab aufscheint.</li>
-                        <li><code>&lt;body>&lt;/body&gt;</code>: Das Body-Element umschließt all den Inhalt, den
-                            Nutzer*innen der Webseite sehen sollen, z. B. Texte, Videos, Audiodateien usw.</li>
-                    </ul>
-                    <h3>HTML, CSS und JavaScript</h3>
-                    <p>Wie bereits eingangs erwähnt, legt HTML hauptsächlich die Struktur von Webseiten fest. Damit
-                        Webseiten auch noch gut aussehen bzw. interaktiv sind, müssen CSS und JavaScript verwendet
-                        werden. Häufig findet sich bei der Definition des Zusammenspiels dieser dreier Elemente der
-                        folgende Vergleich: HTML ist das Gerüst eines Hauses, CSS die Fassade und Inneneinrichtung und
-                        JavaScript die Strom- und Wasserleitungen, die das Haus erst bewohnbar machen. </p>
-                    <h3>Verwendete Quellen</h3>
-                    <ul>
-                        <li><a
-                                href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning">https://www.freecodecamp.org/news/what-is-html-definition-and-meaning</a>
-                        </li>
-                        <li><a
-                                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics</a>
-                        </li>
-
-                    </ul>
-                </div>
+                
                 <div class="post">
                     <h2 id="cms">Was sind CMS?</h2>
                     <p>09.05.2022 von <a href="https://chsteiner.github.io/">Christian Steiner</a></p>
