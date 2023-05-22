@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="de">
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Web-Entwicklung VU 2023 - Theorie" />
     <meta name="author" content="Alle" />
     <title>Web-Entwicklung VU 2023 - Theorie</title>
@@ -11,135 +13,2388 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar-->
-        <div class="border-end bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading border-bottom bg-light">WebDev</div>
-            <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#html">Was ist HTML?</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#css">Was ist CSS?</a>
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Was ist das
-                    Internet?</a> -->
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#http">HTTP</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#osi">OSI
-                    Schichtenmodell</a>
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Data Link</a>
+      <!-- Sidebar-->
+      <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">WebDev</div>
+        <div class="list-group list-group-flush">
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#html"
+            >Was ist HTML?</a
+          >
+
+          <!-- <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#css"
+            >Was ist CSS?</a
+          > -->
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#internet"
+            >Was ist das Internet?</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#http"
+            >HTTP</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#osi"
+            >OSI Schichtenmodell</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#session"
+            >Session Layer</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#application"
+            >Application Layer</a
+          >
+          <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Data Link</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Transport
                     Layer</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Session Layer</a>
+                
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Presentation
                     Layer</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Application
-                    Layer</a>
+                
                 <a class="list-group-item list-group-item-action list-group-item-light p-3"
                     href="#!">Netzwerk-Architekturen</a> -->
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#csspre">Was sind CSS
-                    Processors?</a>
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">WWW</a> -->
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#uri">URI - URL -
-                    URN</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#frontend">Was ist ein
-                    Frontend?</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#backend">Was ist ein
-                    Backend?</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#cssframeworks">Was
-                    sind CSS Frameworks?</a>
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Was ist das
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#csspro"
+            >Was sind CSS Processors?</a
+          >
+          <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">WWW</a> -->
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#uri"
+            >URI - URL - URN</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#frontend"
+            >Was ist ein Frontend?</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#backend"
+            >Was ist ein Backend?</a
+          >
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#cssframeworks"
+            >Was sind CSS Frameworks?</a
+          >
+          <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Was ist das
                     DOM?</a> -->
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Was ist HTML?</a> -->
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Datentypen und
+          <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Datentypen und
                     Datenstrukturen in JS</a> -->
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#cms">Was sind
-                    CMS?</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#webframeworks">Was
-                    sind
-                    Webframeworks?</a>
-
-                <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Was ist
-                    JavaScript?</a> -->
-            </div>
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#cms"
+            >Was sind CMS?</a
+          >
+          <!-- <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#webframeworks"
+            >Was sind Webframeworks?</a
+          > -->
+          <a
+            class="list-group-item list-group-item-action list-group-item-light p-3"
+            href="#javascript"
+            >Was ist JavaScript?</a
+          >
         </div>
-        <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
-            <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
+      </div>
+      <!-- Page content wrapper-->
+      <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+        >
+          <div class="container">
+            <button class="btn btn-primary" id="sidebarToggle">
+              Toggle Menu
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- Page content-->
 
+        <!--SCHÖNGRUBER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="html">Was ist HTML?</h2>
+            <p>May 13, 2023 by <a href="#">Sarah Schoengruber</a></p>
+            <hr />
+            <p>
+              HTML steht für Hypertext Markup Language, auf Deutsch
+              Auszeichnungssprache für Hypertext. Hyper wird hier im Sinne von
+              „erweitert“ gebraucht und bedeutet, dass Hypertext nicht einfach
+              zur geradlinigen Lektüre gedacht ist. Statt dessen bietet ein
+              Hypertext-Dokument Verknüpfungen zu anderen Textstellen an - die
+              Hyperlinks. Das Ziel solcher Links kann im gleichen Dokument
+              liegen oder auch in einem ganz anderen. Hypertext lässt sich auf
+              unterschiedliche Weisen herstellen. HTML ist eine rein auf Text
+              basierende Realisierung dieses Konzepts und verwendet spezielle
+              Zeichenfolgen, um Hyperlinks zu erzeugen und Einsprungpunkte für
+              Hyperlinks zu markieren. Gleichzeitig bieten diese Markierungen
+              auch die Möglichkeit, den Inhalt des Dokuments zu strukturieren,
+              so dass bei der Anzeige des Dokuments eine passende Darstellung
+              erzeugt werden kann.
+            </p>
+            <br />
+            <h3>Aufbau von HTML-Dokumenten</h3>
+            <h4>Elemente</h4>
+            <p>Dies sind die wichtigsten Tags:</p>
+            <ul>
+              <li>
+                <code>&lt;!DOCTYPE html&gt;</code>: Hiermit wird der Dokumenttyp
+                deklariert, dies ist obligatorisch und auch notwendig, damit
+                sich das Dokument richtig verhält.
+              </li>
+              <li>
+                <code>&lt;html&gt;&lt;/html&gt;</code>: Das HTML-Element, oft
+                auch Wurzelelement genannt, umschließt den Inhalt der gesamten
+                Webseite.
+              </li>
+              <li>
+                <code>&lt;head&gt;&lt;/head&gt;</code>: Im Head-Element wird all
+                das abgelegt, das nicht Inhalt der Webseite ist. Darunter fallen
+                z. B. Keywords, die von Suchmaschinen gefunden werden können,
+                die Beschreibung der Webseite oder Links auf Stylesheets.
+              </li>
+              <li>
+                <code>&lt;meta charset="utf-8"&gt;</code>: Hiermit wird der
+                Zeichensatz des Dokuments auf UTF-8 gestellt, was empfohlen ist,
+                weil damit die meisten Zeichen der meisten Sprachen dargestellt
+                werden können.
+              </li>
+              <li>
+                <code>&lt;title>&lt;/title&gt;</code>: Mit dem Title-Element
+                wird der Titel des Dokuments festgelegt, der z. B. im Tab
+                aufscheint.
+              </li>
+              <li>
+                <code>&lt;body>&lt;/body&gt;</code>: Das Body-Element umschließt
+                all den Inhalt, den Nutzer*innen der Webseite sehen sollen, z.
+                B. Texte, Videos, Audiodateien usw.
+              </li>
+            </ul>
+            <br />
+            <h4>Attribute</h4>
+            <img
+              src=" https://www.html-seminar.de/bilder/html-befehl-aufbau-attribute.jpg"
+              class="img-fluid"
+              alt="HTML Attribute"
+            />
+            <br />
+            <p>
+              Bei Attributen sollte man folgende Dinge immer im Hinterkopf
+              behalten:
+            </p>
+            <ul>
+              <li>
+                Attributwerte sollten immer in Anführungszeichen gesetzt werden.
+              </li>
+              <li>
+                Die Attribute kommen einfach hintereinander mit einem
+                Leerzeichen getrennt. Die Reihenfolge der Attribute ist
+                unwichtig.
+              </li>
+              <li>
+                Viele Attribute sind optional. Zb. <code>id</code> und
+                <code>class</code>. Aber andere HTML tags setzen die Benutzung
+                dieser voraus, wie etwa <code>img</code> und <code>a</code>
+              </li>
+            </ul>
+            <br />
+            <p>
+              Aus diesen Tags und Attributen kann man folgendes Grundgerüst
+              bilden:
+            </p>
+            <img
+              src="img/grungeruestHTML.jpg"
+              class="img-fluid"
+              alt="Grundgerüst eines HTML Dokuments"
+            />
+            <br />
+            <p>
+              Folgendes sollte man sich also bezüglich HTML Dokumenten merken:
+            </p>
+
+            <div class="card-deck">
+              <div class="card bg-info">
+                <div class="card-body text-center">
+                  <p class="card-text">
+                    Ein sinnvolles HTML-Dokument besteht aus einem
+                    <b>Head</b> und einem <b>Body</b>
+                  </p>
                 </div>
-            </nav>
-            <!-- Page content-->
-            <div class="container-fluid">
-                <div class="post">
-                    <h2 id="html">Was ist HTML?</h2>
-                    <p>May 2, 2022 by <a href="#">Bla</a></p>
-                    <hr>
-                    <p>Bla</p>
-                    <h3>Was ist ein HTML-Dokument?</h3>
-                    <p>Bla
-                    </p>
-                    <h3>Aufbau von HTML-Dokumenten</h3>
-                    <h4>Elemente</h4>
-                    <p>Bla</p>
-                    <ol>
-                        <li>bla</li>
-                        <li>bla</li>
-                        <li>bla
-                        </li>
-                    </ol>
-                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png"
-                        class="img-fluid" alt="Bild, das ein HTML-Element mit Tags darstellt">
-                    <p>bla</p>
-                    <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"
-                        class="img-fluid" alt="Bild, das ein HTML-Element Attributen zeigt">
-                    <p>bla</p>
-                    <img src="https://i.imgur.com/pdgF1AX.png" class="img-fluid"
-                        alt="Bild, ein basales HTML-Dokument zeigt">
-
-                    <ul>
-                        <li><code>&lt;!DOCTYPE html&gt;</code>: Hiermit wird der Dokumenttyp deklariert, dies ist
-                            obligatorisch und auch notwendig, damit sich das Dokument richtig verhält.</li>
-                        <li><code>&lt;html&gt;&lt;/html&gt;</code>: Das HTML-Element, oft auch Wurzelelement genannt,
-                            umschließt den Inhalt der gesamten Webseite.</li>
-                        <li><code>&lt;head&gt;&lt;/head&gt;</code>: Im Head-Element wird all das abgelegt, das nicht
-                            Inhalt der Webseite ist. Darunter fallen z. B. Keywords, die von Suchmaschinen gefunden
-                            werden können, die Beschreibung der Webseite oder Links auf Stylesheets.</li>
-                        <li><code>&lt;meta charset="utf-8"&gt;</code>: Hiermit wird der Zeichensatz des Dokuments auf
-                            UTF-8 gestellt, was empfohlen ist, weil damit die meisten Zeichen der meisten Sprachen
-                            dargestellt werden können.</li>
-                        <li><code>&lt;title>&lt;/title&gt;</code>: Mit dem Title-Element wird der Titel des Dokuments
-                            festgelegt, der z. B. im Tab aufscheint.</li>
-                        <li><code>&lt;body>&lt;/body&gt;</code>: Das Body-Element umschließt all den Inhalt, den
-                            Nutzer*innen der Webseite sehen sollen, z. B. Texte, Videos, Audiodateien usw.</li>
-                    </ul>
-                    <h3>HTML, CSS und JavaScript</h3>
-                    <p>bla</p>
-                    <h3>Verwendete Quellen</h3>
-                    <ul>
-                        <li><a
-                                href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning">https://www.freecodecamp.org/news/what-is-html-definition-and-meaning</a>
-                        </li>
-                        <li><a
-                                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics</a>
-                        </li>
-
-                    </ul>
+              </div>
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <p class="card-text">
+                    Der Header enthält Informationen <b>über</b> das Dokument,
+                    die nicht zum eigentlichen Inhalt gehören, z.B. Titel,
+                    Autor, Keywords, Kodierung, Sprache, … (Metadaten / SEO)
+                  </p>
                 </div>
-                
+              </div>
+              <div class="card bg-info">
+                <div class="card-body text-center">
+                  <p class="card-text">
+                    Der <b>Body</b> enthält <b>eigentlichen</b> Inhalt des
+                    Dokuments, z.B. Überschriften, Absätze, Listen, Tabellen,
+                    Formulare, Links zu Bildern usw.
+                  </p>
+                </div>
+              </div>
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <p class="card-text">
+                    Ein HTML Dokument hat immer eine <b>Baumstruktur</b>
+                  </p>
+                </div>
+              </div>
             </div>
+            <br />
+            <h3>HTML, CSS und JavaScript</h3>
+            <p>
+              Damit das HTML Dokument auch ansprechend aussieht, braucht man ein
+              sogenanntes Stylesheet (.css) und um auch noch einige
+              Funktionalitäten zu gewährleisten ist ein entsprechendes
+              Javascript Dokument (.js) hilfreich.
+            </p>
+            <br />
+            <h4>Einbinden von CSS und JavaScript</h4>
+            <p>
+              Es gibt mehrere Varianten um diese Files mit dem HTML zu
+              verlinken. Die gängigste Methode besteht darin, im
+              <code>&lt;head&gt;</code> Element den Tag
+              <code>&lt;link&gt;</code>einzufügen. Bei dieser Variante muss das
+              css bzw. js Dokument separat gespeichert sein. Die zweite Variante
+              ist eher unuübersichtlich, da hier inline, also direkt im HTML
+              Code die Script Befehle geschrieben werden. Entweder wird dies im
+              header gemacht oder direkt im Tag. Hier beide Inline Varianten am
+              Beispiel von CSS:
+            </p>
+            <br />
+            <h5>Im Head:</h5>
+            <img
+              src="img/InlineHEAD.jpg"
+              class="img-fluid"
+              alt="Inline Beispiel im Head"
+            />
+            <h5>Im Tag:</h5>
+            <img
+              src="img/InlineTAG.jpg"
+              class="img-fluid"
+              alt="Inline Beispiel im Tag"
+            />
+            <br />
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg/Erste_Schritte"
+                  >https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg/Erste_Schritte</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://web.simmons.edu/~grabiner/comm244/weekone/html-attributes.html"
+                  >http://web.simmons.edu/~grabiner/comm244/weekone/html-attributes.html</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!--DELIC-->
+        <div class="container-fluid">
+          <div class="post">
+            <h1 id="internet">Das Internet</h1>
+            <p>May 2023 by <a href="#">Dominik Delic</a></p>
+            <hr />
+            <ul>
+              <li>
+                Das Internet (von englisch interconnected networks
+                ‚zusammengeschaltete Netzwerke‘, kürzer englisch internetwork
+                oder kurz net ‚Netz‘), umgangssprachlich auch Netz, ist ein
+                weltweiter Verbund von Rechnernetzwerken, den autonomen
+                Systemen.
+              </li>
+              <li>
+                Es ermöglicht die Nutzung von Internetdiensten wie WWW, E-Mail,
+                Telnet, SSH, XMPP, MQTT und FTP und dabei kann sich jeder
+                Rechner mit jedem anderen Rechner verbinden.
+              </li>
+              <li>
+                Der Datenaustausch zwischen den über das Internet verbundenen
+                Rechnern erfolgt über die technisch normierten
+                Internetprotokolle und die Technik des Internets wird durch die
+                RFCs der Internet Engineering Task Force (IETF) beschrieben.
+              </li>
+              <li>
+                Die Verbreitung des Internets hat zu umfassenden Umwälzungen in
+                vielen Lebensbereichen geführt. Es trug zu einem
+                Modernisierungsschub in vielen Wirtschaftsbereichen sowie zur
+                Entstehung neuer Wirtschaftszweige bei und hat zu einem
+                grundlegenden Wandel des Kommunikationsverhaltens und der
+                Mediennutzung im beruflichen und privaten Bereich geführt. Die
+                kulturelle Bedeutung dieser Entwicklung wird manchmal mit der
+                Erfindung des Buchdrucks gleichgesetzt.
+              </li>
+            </ul>
+            <br />
+            <h1>Die Geburtstunde des Internets</h1>
+            <ul>
+              <li>
+                Die Geburtsstunde des Internets ist das Jahr 1957, als die
+                Sowjetunion ihren ersten Satelliten Sputnik 1 ins All schickte.
+                Das Verteidigungsministerium der USA fürchtete, dass es so der
+                Sowjetunion gelingen könnte, das US-amerikanische
+                Nachrichtensystem zu zerstören. Dies war der Auslöser für die
+                Planung eines computergesteuerten Nachrichtensystems, welches
+                auch bei Ausfall eines Knotens weiterhin funktionsfähig sein
+                soll. Zu diesem Zweck wurde die Advances Research Project Agency
+                gegründet, welche erste Versuche mit paketvermittelnden Netzen
+                durchführte. Sie entwickelte ein dezentrales Computernetzwerk,
+                bei dem die Rechner an unterschiedlichen Standorten aufgestellt
+                wurden. Dieses in erster Linie für militärische Zwecke
+                entwickelte Netzwerk wurde 1965 auch für einige Universitäten
+                der USA geöffnet und schließlich 1969 auch der Öffentlichkeit
+                vorgestellt.
+              </li>
+            </ul>
+            <br />
+            <h1>Drei Phasen der Internetgeschichte</h1>
+            <p>
+              Die Geschichte des Internets lässt sich grob in folgende drei
+              Phasen einteilen:
+            </p>
+            <ul>
+              <li>
+                Die erste Phase, die Frühphase, setzt ab Mitte der 1960er Jahre
+                ein. Hier wurden die Grundlagen der heutigen Technik und
+                Anwendungen des Internets gelegt.
+              </li>
+              <li>
+                In den 1970er Jahren folgte die zweite Phase der
+                Internetgeschichte und ist durch das Wachstum und den
+                internationalen Ausbau des Internets gekennzeichnet. <br />
+                Diese Phase wird alternativ auch als die wilde Phase des
+                Internets bezeichnet, da hier das Internet noch eine
+                Tauschökonomie für Software und Information darstellte und durch
+                die Beteiligung und Selbstorganisation von Communitys und
+                Hackern geprägt war.
+              </li>
+              <li>
+                Die kommerzielle Phase des Internets beginnt in den 1990er
+                Jahren. Durch die Abschaltung des Arpanets, eines
+                Computernetzwerkes der US Air Force, war das Internet auch für
+                die Öffentlichkeit zugänglich.
+              </li>
+            </ul>
+            <br />
+            <h1>1989-1990 Jahre: Das World Wide Web (WWW) formiert sich</h1>
+            <ul>
+              <li>
+                Eine wichtige Persönlichkeit für die Entwicklung des Internets
+                war der britische Informatiker Tim Berners-Lee. Er
+                veröffentlichte 1989 erste Entwürfe der Auszeichnungssprache
+                HTML (Hypertext Markup Language), auf der heute noch alle
+                Webseiten aufbauen.
+              </li>
+              <li>
+                Zudem entwickelte er auch das Protokoll HTTP, welches das
+                Navigieren über Links ermöglicht, sodass gezielte Verbindungen
+                zu Informationen auf anderen Webseiten hergestellt werden
+                können.Berners-Lee entwickelte außerdem die URL, den ersten
+                Webbrowser und den ersten Webserver.
+              </li>
+              <li>
+                Diese Entwicklungen waren die Grundlage für das World Wide Web
+                (WWW).
+              </li>
+              <li>
+                1990 wurde das Internet zu einem massentauglichem Medium. In
+                diesem Jahr beschloss die National Science Foundation das
+                Internet nicht nur für Forschungszwecke, sondern auch für
+                kommerzielle Zwecke nutzbar zu machen.
+              </li>
+            </ul>
+            <br />
+            <h1>HTTP - Hyper Text Transfer Protocol</h1>
+            <p>
+              HTTP steht für Hypertext Transfer Protocol oder auch
+              Hypertext-Übertragungsprotokoll. Es wird benutzt, um Webseiten aus
+              dem World Wide Web in einen Webbrowser lesbar zu machen.
+            </p>
+            <ul>
+              <li>Protokoll auf Anwendungsschicht, basiert auf TCP/IP</li>
+              <li>
+                Interaktion erfolgt lediglich in Form eines einfachen
+                Frage/Antwort-Verfahrens (Client macht einen Request - Server
+                gibt Response)
+              </li>
+              <li>
+                Protokoll ist zustandslos (Server (kann mit mehreren Clients
+                agieren) ‘weiß’ nicht ob Client (Maschine oder ein Programm, das
+                Anfragen stellt) schon einmal gefragt hat)
+              </li>
+            </ul>
+            <br />
+            <h1>HTTP Methods</h1>
+            <ul>
+              <li>GET: URI + Server Anforderung</li>
+              <li>
+                POST: schickt unbegrenzte Mengen an Daten zur weiteren
+                Verarbeitung zum Server
+              </li>
+              <li>
+                HEAD: wie GET, aber nur um die Metadaten zurück zu bekommen
+              </li>
+              <li>
+                PUT: Hochladen auf Webserver, Resource ersetzen oder anlegen
+              </li>
+              <li>
+                PATCH: Ändert ein bestehendes Dokument ohne dieses wie bei PUT
+                vollständig zu ersetzen
+              </li>
+              <li>DELETE: löscht die angegebene Ressource auf dem Server</li>
+              <li>
+                TRACE: Überprüft, ob und wie die Anfrage auf dem Weg zum Server
+                verändert worden ist
+              </li>
+              <li>
+                OPTIONS: liefert eine Liste der vom Server unterstützten
+                Methoden und Merkmale
+              </li>
+              <li>
+                CONNECT: wird von Proxyservern implementiert, um SSL-Tunnel zur
+                Verfügung zu stellen
+              </li>
+            </ul>
+            <br />
+            <h1>URI - URL - URN</h1>
+            <p>
+              Dienen zur weltweit eindeutigen Identifikation und Adressierung
+              von Dokumenten im Web.
+            </p>
+            <ul>
+              <li>URI - Uniform Resource Identifier</li>
+              <li>URN - Uniform Resource Name</li>
+              <li>URL - Uniform Resource Locator</li>
+            </ul>
+            <p>Verbreitetste Ausprägung der URIs sind URLs</p>
+            <img
+              class="img-fluid"
+              src="https://danielmiessler.com/images/URL-URI-Miessler-2022-2048x871.png"
+              width="600"
+              height="400"
+              alt="URI URN URL"
+            />
+            <br />
+            <br />
+            <h1>Anforderungen an URIs</h1>
+            <ul>
+              <li>
+                Universalität (Jede Ressource im Internet soll unabhängig vom
+                Informationsdienst ansprechbar sein)
+              </li>
+              <li>
+                Eindeutigkeit (Jede Ressource muss weltweit eindeutig
+                identifizierbar sein)
+              </li>
+              <li>Erweiterbarkeit</li>
+              <li>
+                Fixierbarkeit (URI sollen nicht nur auf elektronischem Weg
+                austauschbar, sondern auch manuell bearbeitbar oder druckbar
+                sein)
+              </li>
+            </ul>
+            <br />
+            <h1>Aufbau einer URI</h1>
+            <ul>
+              <li>
+                URI besteht aus fünf Teilen. Nur “scheme” und “path” sind
+                verpflichtend
+              </li>
+              <li>
+                Was kann drinnen stehen: Benutzer, Passwort, Hostname,
+                Portnummer, Pfadname
+              </li>
+            </ul>
+            <img
+              class="img-fluid"
+              src="data:image/png;base64,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"
+              width="600"
+              height="400"
+              alt="URI Aufbau"
+            />
+            <br />
+            <h3>Verwendete Quellen:</h3>
+            <ul>
+              <li>
+                <a href="https://de.wikipedia.org/wiki/Internet"
+                  >https://de.wikipedia.org/wiki/Internet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.fonial.de/wissen/begriff/geschichte-des-internets/"
+                  >https://www.fonial.de/wissen/begriff/geschichte-des-internets</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/presentation/d/11g9T2wCwGb7ao-ieYO3oPBwUQ2ZkJ2cMYRlodgMB6sE/edit#slide=id.g6cc2144804_0_412"
+                  >https://docs.google.com/presentation/d/11g9T2wCwGb7ao-ieYO3oPBwUQ2ZkJ2cMYRlodgMB6sE/edit#slide=id.g6cc2144804_0_412</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--KROISSENBRUNNER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="http">Was ist HTTP?</h2>
+            <p>May 2023 by <a href="#">Martin Kroißenbrunner</a></p>
+            <hr />
+            <h3>Beschreibung</h3>
+            <p>
+              HTTP (Hypertext Transfer Protocol) ist ein Protokoll, das für die
+              Kommunikation im World Wide Web verwendet wird. Es ermöglicht den
+              Austausch von Informationen und Ressourcen zwischen einem
+              Webserver und einem Webbrowser. HTTP basiert auf dem
+              Client-Server-Modell, bei dem der Webbrowser (Client) eine Anfrage
+              sendet und der Webserver darauf antwortet.
+            </p>
+            <p>
+              HTTP verwendet eine Textformatierung, bei der Anfragen und
+              Antworten in Nachrichten eingebettet sind. Eine HTTP-Anfrage
+              besteht aus einer Methode (wie GET, POST, PUT usw.), einer URL
+              (Uniform Resource Locator) und optionalen Headern und Daten. Der
+              Webserver verarbeitet die Anfrage und sendet eine HTTP-Antwort
+              zurück, die den Statuscode, Headerinformationen und den Inhalt
+              enthält.
+            </p>
+            <p>
+              HTTP ist ein wichtiger Bestandteil des Internets und ermöglicht
+              das Abrufen von Webseiten, das Hochladen von Dateien, das
+              Ausführen von API-Anfragen und vieles mehr. Es ist ein
+              grundlegendes Protokoll, das von Webentwicklern, Browsern und
+              anderen Anwendungen verwendet wird, um Informationen über das
+              Netzwerk auszutauschen.
+            </p>
+            <br />
+            <h3>
+              Beispiel einer grundlegenden Interaktion zwischen einem Client und
+              einem Server über HTTP
+            </h3>
+            <br />
+            <h4>Request</h4>
+            <code>
+              GET /index.html HTTP/1.1<br />
+              Host: www.example.com<br />
+              User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+              AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124
+              Safari/537.36<br />
+            </code>
+            <br />
+            <h4>Response</h4>
+            <code>
+              HTTP/1.1 200 OK<br />
+              Content-Type: text/html<br />
+              Content-Length: 1274<br />
+              <br />
+              &lt;!DOCTYPE html&gt;<br />
+              &lt;html&gt;<br />
+              &lt;head&gt;<br />
+              &lt;title&gt;Example&lt;/title&gt;<br />
+              &lt;/head&gt;<br />
+              &lt;body&gt;<br />
+              &lt;h1&gt;Hello, World!&lt;/h1&gt;<br />
+              &lt;/body&gt;<br />
+              &lt;/html&gt;<br />
+            </code>
+            <br />
+            <h3>HTTP-Statuscodes und Beschreibungen</h3>
+            <p>
+              HTTP-Statuscodes sind dreistellige Zahlen, die vom Server als
+              Antwort auf eine Anfrage des Clients zurückgegeben werden. Diese
+              Codes geben Informationen über den Status der Anfrage und helfen
+              bei der Fehlerbehebung und Problembehandlung von
+              Kommunikationsproblemen zwischen Client und Server. Jeder
+              Statuscode hat eine spezifische Bedeutung und ist in verschiedene
+              Klassen eingeteilt, wie z.B. Information, Erfolg, Umleitung,
+              Clientfehler und Serverfehler.
+            </p>
+            <div class="row">
+              <div class="col-6">
+                <h4>Beispiele:</h4>
+                <ul>
+                  <li>
+                    301 Moved Permanently: Die angeforderte Ressource wurde
+                    dauerhaft an eine neue URL verschoben. Clients sollten ihre
+                    Lesezeichen oder Links auf die neue Adresse aktualisieren.
+                  </li>
+                  <li>
+                    305 Use Proxy: Die angeforderte Ressource muss über den in
+                    der Location-Header angegebenen Proxy abgerufen werden.
+                    Clients sollten für zukünftige Anfragen den angegebenen
+                    Proxy verwenden.
+                  </li>
+                  <li>
+                    307 Temporary Redirect: Die angeforderte Ressource wurde
+                    vorübergehend an eine andere URL verschoben. Clients sollten
+                    für zukünftige Anfragen weiterhin die ursprüngliche URL
+                    verwenden.
+                  </li>
+                  <li>
+                    400 Bad Request: Der Server kann die Anfrage aufgrund
+                    fehlerhafter Syntax oder ungültiger Parameter, die vom
+                    Client gesendet wurden, nicht verarbeiten.
+                  </li>
+                  <li>
+                    404 Not Found: Der Server kann die angeforderte Ressource
+                    nicht finden. Sie wurde möglicherweise entfernt oder die URL
+                    ist falsch.
+                  </li>
+                  <li>
+                    408 Request Timeout: Der Server hat die Anfrage aufgrund der
+                    Inaktivität des Clients oder des Versäumnisses, eine
+                    vollständige Anfrage innerhalb des vom Server festgelegten
+                    Timeout-Zeitraums zu senden, abgebrochen.
+                  </li>
+                  <li>
+                    413 Request Entity Too Large: Der Server lehnt die
+                    Verarbeitung der Anfrage ab, da die Nutzlast (z.B. POST-
+                    oder PUT-Daten) die konfigurierten Grenzwerte des Servers
+                    überschreitet.
+                  </li>
+                  <li>
+                    417 Expectation Failed: Der Server kann die Anforderungen,
+                    die im Expect-Request-Header angegeben sind, nicht erfüllen.
+                  </li>
+                  <li>
+                    500 Internal Server Error: Es ist ein allgemeiner
+                    Serverfehler aufgetreten, der ihn daran hindert, die Anfrage
+                    zu erfüllen. Dieser Statuscode wird oft für nicht behandelte
+                    Ausnahmen oder unerwartete Fehler verwendet.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <img
+                  src="https://www.geekbundle.org/wp-content/uploads/2017/01/23-http-status-codes.png"
+                  alt="HTTP Comic"
+                  width="500px"
+                />
+              </div>
+            </div>
+            <br />
+            <h3>Quellen</h3>
+            <ul>
+              <li>https://www.w3.org/Protocols/HTTP/1.0/spec.html</li>
+              <li>
+                https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+              </li>
+              <li>https://developer.mozilla.org/en-US/docs/Web/HTTP/Status</li>
+              <li>https://www.restapitutorial.com/httpstatuscodes.html</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--FALTIS-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="osi">Das OSI-Referenzmodell</h2>
+            <p>May 18, 2023 by <a href="#">Gisela Faltis</a></p>
+            <hr />
+            <p>
+              <strong
+                >Das OSI-Modell
+                <i>(Open System Inerconnection model)</i></strong
+              >
+              ist ein Referenzmodell für Netzwerkprotokolle, die als Schichten
+              strukturiert sind. Das OSI-Modell findet in der Computer- und
+              Netzwerktechnik Anwendung. Es wurde von der ISO
+              <i>(International Organization for Standardization)</i> als
+              Grundlage für die Bildung von offenen Kommunikationsstandards
+              entworfen. Der Abstraktionsgrad der Funktionalität nimmt von
+              Schicht 1 bis zur Schicht 7 zu. Mit diesem Modell wird die
+              standardisierte Kommunikation zwischen Computersystemen
+              ermöglicht, unabhängig von Software und Hardware. Das OSI-Modell
+              besteht aus insgesamt 7 Schichten und jede Schicht erfüllt dabei
+              eine bestimmte Aufgabe. Die Strukturierung in Schichten ermöglicht
+              die universelle Kommunikation innerhalb eines Netzwerkes aber auch
+              zwischen zwei verschiedenen Netzwerken.
+            </p>
+            <img
+              src="https://www.elektroniktutor.de/internet/net_pict/osi.png"
+              class="img-fluid"
+              alt="Bild, stell OSI-Modell dar."
+            />
+            <br />
+            <br />
+            <h3>Geschichte</h3>
+            <p>
+              Bereits in den 70er Jahren begann die Entwicklung des OSI-Modells
+              und wurde von der International Telecommunication Union (ITU) und
+              der International Organization for Standardization (ISO)
+              veröffentlicht, weswegen das OSI-Modell auch gern ISO/OSI-Modell
+              genannt wird. Die Definition des ISO/OSI-Standards hatte zum Ziel,
+              ein Referenzmodell zu schaffen, welches die Kommunikation diverser
+              technischer Systeme über unterschiedlichste Medien und
+              Technologien zu ermöglichen und Kompatibilitäten bereitstellt.
+            </p>
+            <br />
+            <h3>Bitübertragung | Physical Layer</h3>
+            <p>
+              Der Physical Layer oder auch Bit-Übertragungsschicht genannt,
+              bildet die erste und unterste Schicht des Modells. Der Physical
+              Layer sorgt für die Weiterleitung und Übertragung und definiert
+              die elektrische, mechanische und funktionalen Schnittstellen zum
+              Übertragungsmedium, also für die physischen Geräte und jene
+              Komponenten, auf denen der Datentransfer abläuft.
+            </p>
+            <br />
+            <h3>Übersichtstabelle</h3>
+            <p>
+              <style type="text/css">
+                .tg {
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                }
+                .tg td {
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  padding: 10px 5px;
+                  border-style: solid;
+                  border-width: 1px;
+                  overflow: hidden;
+                  word-break: normal;
+                }
+                .tg th {
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: normal;
+                  padding: 10px 5px;
+                  border-style: solid;
+                  border-width: 1px;
+                  overflow: hidden;
+                  word-break: normal;
+                }
+              </style>
+            </p>
+            <br />
+            <table class="tg">
+              <tr>
+                <th bgcolor="#ADADAD"><strong>Nr.</strong></th>
+                <th lang="de" bgcolor="#ADADAD">
+                  <strong>OSI-Schicht</strong>
+                </th>
+                <th lang="en" bgcolor="#ADADAD">
+                  <strong>Layer of OSI-Model</strong>
+                </th>
+                <th bgcolor="#ADADAD"><strong>Einordnung</strong></th>
+                <th bgcolor="#ADADAD"><strong>Protokollbeispiele</strong></th>
+                <th bgcolor="#ADADAD"><strong>Kopplungselemente</strong></th>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">7</td>
+                <td bgcolor="#ffb3ba">Anwendungsschicht</td>
+                <td bgcolor="#ffdfba">Application Layer</td>
+                <td bgcolor="#ffffba">Anwendungsorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0812221.htm"
+                    >DHCP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0901141.htm"
+                    >DNS</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0902241.htm"
+                    >FTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0902231.htm"
+                    >HTTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1811281.htm"
+                    >HTTPS</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1106071.htm"
+                    >RTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0903081.htm"
+                    >SMTP</a
+                  >
+                  etc.
+                </td>
+                <td bgcolor="#bae1ff">
+                  Gateway, Content-Switch, Proxy, Layer-4-7-Switch
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">6</td>
+                <td bgcolor="#ffb3ba">Darstellungsschicht</td>
+                <td bgcolor="#ffdfba">Presentations Layer</td>
+                <td bgcolor="#ffffba">Anwendungsorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0812221.htm"
+                    >DHCP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0901141.htm"
+                    >DNS</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0902241.htm"
+                    >FTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0902231.htm"
+                    >HTTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1811281.htm"
+                    >HTTPS</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1106071.htm"
+                    >RTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0903081.htm"
+                    >SMTP</a
+                  >
+                  etc.
+                </td>
+                <td bgcolor="#bae1ff">
+                  Gateway, Content-Switch, Proxy, Layer-4-7-Switch
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">5</td>
+                <td bgcolor="#ffb3ba">Sitzungsschicht</td>
+                <td bgcolor="#ffdfba">Session Layer</td>
+                <td bgcolor="#ffffba">Anwendungsorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0812221.htm"
+                    >DHCP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0901141.htm"
+                    >DNS</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0902241.htm"
+                    >FTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0902231.htm"
+                    >HTTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1811281.htm"
+                    >HTTPS</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1106071.htm"
+                    >RTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0903081.htm"
+                    >SMTP</a
+                  >
+                  etc.
+                </td>
+                <td bgcolor="#bae1ff">
+                  Gateway, Content-Switch, Proxy, Layer-4-7-Switch
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">4</td>
+                <td bgcolor="#ffb3ba">Transportschicht</td>
+                <td bgcolor="#ffdfba">Transport Layer</td>
+                <td bgcolor="#ffffba">Transportorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0812271.htm"
+                    >TCP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0812281.htm"
+                    >UDP</a
+                  >,
+                  <a
+                    href="https://de.wikipedia.org/wiki/Stream_Control_Transmission_Protocol"
+                    >SCTP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0907231.htm"
+                    >SPX</a
+                  >
+                </td>
+                <td bgcolor="#bae1ff">
+                  Gateway, Content-Switch, Proxy, Layer-4-7-Switch
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">3</td>
+                <td bgcolor="#ffb3ba">Vermittlungsschicht</td>
+                <td bgcolor="#ffdfba">Network Layer</td>
+                <td bgcolor="#ffffba">Transportorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0606251.htm"
+                    >TCP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0907231.htm"
+                    >IPX</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0901011.htm"
+                    >ICMP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0901021.htm"
+                    >IGMP</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0906191.htm"
+                    >IPsec</a
+                  >
+                </td>
+                <td bgcolor="#bae1ff">Router, Layer-3-Switch</td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">2</td>
+                <td bgcolor="#ffb3ba">Sicherrungsschicht</td>
+                <td bgcolor="#ffdfba">Data Link Layer</td>
+                <td bgcolor="#ffffba">Transportorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0807021.htm"
+                    >EEE 802.3</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0603201.htm"
+                    >Ethernet</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0907031.htm"
+                    >IEEE 802.11 WLAN</a
+                  >,
+                  <a href="https://de.wikipedia.org/wiki/Media_Access_Control"
+                    >MAC</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0908011.htm"
+                    >Token Ring</a
+                  >, <a href="https://de.wikipedia.org/wiki/ARCNET">ARCNET</a>
+                </td>
+                <td bgcolor="#bae1ff">
+                  Bridge, Layer-2-Switsch, Wireless Access Point
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFBBFF">1</td>
+                <td bgcolor="#ffb3ba">Bitübertragungsschicht</td>
+                <td bgcolor="#ffdfba">Physical Layer</td>
+                <td bgcolor="#ffffba">Transportorientiert</td>
+                <td bgcolor="#baffc9">
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/1404201.htm"
+                    >1000BASE-T</a
+                  >,
+                  <a
+                    href="https://www.elektronik-kompendium.de/sites/net/0908011.htm"
+                    >Token Ring</a
+                  >, <a href="https://de.wikipedia.org/wiki/ARCNET">ARCNET</a>
+                </td>
+                <td bgcolor="#bae1ff">
+                  (Netzwerkkabel), Repeater, Hub, Antennen
+                </td>
+              </tr>
+            </table>
+            <br />
+            <h4>Eselsbrücken</h4>
+            <p></p>
+            <ul>
+              <li>
+                „<strong>P</strong>lease <strong>D</strong>o
+                <strong>N</strong>ot <strong>T</strong>hrow
+                <strong>S</strong>alami <strong>P</strong>izza
+                <strong>A</strong>way“
+              </li>
+              <li>
+                „<strong>A</strong>ll <strong>P</strong>eople
+                <strong>S</strong>eem <strong>t</strong>o <strong>N</strong>eed
+                <strong>D</strong>ata <strong>P</strong>rocessing“
+              </li>
+              <li>
+                „<strong>A</strong>lle <strong>P</strong>riester
+                <strong>s</strong>aufen <strong>T</strong>equila
+                <strong>n</strong>ach <strong>d</strong>er
+                <strong>P</strong>redigt“
+              </li>
+              <li>
+                „<strong>A</strong>lle <strong>d</strong>eutschen
+                <strong>S</strong>tudenten <strong>t</strong>rinken
+                <strong>v</strong>erschiedene <strong>S</strong>orten
+                <strong>B</strong>ier“
+              </li>
+            </ul>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.elektronik-kompendium.de/sites/kom/0301201.htm"
+                  >https://www.elektronik-kompendium.de/sites/kom/0301201.htm</a
+                >
+              </li>
+              <li>
+                <a href="https://www.elektroniktutor.de/internet/osi.html"
+                  >https://www.elektroniktutor.de/internet/osi.html</a
+                >
+              </li>
+              <li>
+                <a href="https://de.wikipedia.org/wiki/OSI-Modell"
+                  >https://de.wikipedia.org/wiki/OSI-Modell</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ip-insider.de/was-ist-das-osi-modell-a-605831/"
+                  >https://www.ip-insider.de/was-ist-das-osi-modell-a-605831/</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://dev-supp.de/netzwerk-anonymitaet/iso-osi-referenzmodell"
+                  >https://dev-supp.de/netzwerk-anonymitaet/iso-osi-referenzmodell</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.myrasecurity.com/de/knowledge-hub/osi-modell/"
+                  >https://www.myrasecurity.com/de/knowledge-hub/osi-modell/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--REITER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="session">Was ist der Session Layer?</h2>
+            <p>May 19, 2023 by <a href="#">Georg Maximilian Reiter</a></p>
+            <hr />
+            <p>
+              Der Session Layer (von englisch <em>session</em> = dt. „Sitzung“),
+              die fünfte Ebene des OSI-Schichtenmodells, ist im Deutschen auch
+              als Sitzungsschicht bzw. Kommunikationssteuerungschicht bekannt.
+              Wenn zwei vernetzte Geräte miteinander kommunizieren wollen, muss
+              dazu erst eine Sitzung eingerichtet werden, was auf der Ebene des
+              Session Layers geschieht. Der Session Layer koordiniert die
+              Kommunikation zwischen den Geräten. Die wesentlichen Funktionen
+              des Session Layers sind Aufbau, Koordinierung und Beenden der
+              Sitzung. Vereinfacht heruntergebrochen steuert der Session Layer,
+              wann und wie viele Daten vernetzte Geräte senden können.
+            </p>
+            <img
+              src="https://static.javatpoint.com/tutorial/computer-network/images/session-layer-in-osi-model.png"
+              class="img-fluid"
+              alt="OSI-Schichtenmodell"
+            />
+            <br />
+            <h3>Kommunikationssteuerung</h3>
+            <p>
+              Die Kommunikation zwischen den Geräten findet beidseitig, parallel
+              oder richtungsabhängig statt, wobei der Session Layer die
+              Dialogkontrolle (Dialog Control) übernimmt. Jede Sitzung ist
+              einzigartig und eindeutig. Findet z. B. eine einseitige
+              Kommunikation, werden durch den Session Layer Tokens vergeben,
+              damit die Reihenfolge in der Kommunikation geregelt wird.
+            </p>
+            <p>Die Tokens werden in 4 Kategorien unterteilt:</p>
+            <ul>
+              <li>
+                <b>Datenmarken (Data Token)</b>: Sie regeln bei einer
+                einseitigen Kommunikation wann welche Seite senden kann
+              </li>
+              <li>
+                <b>Aktivitätsmarken (Activity Major Token)</b>: Sie unterteilen
+                eine Verbindung in unterschiedliche Aktivitäten. Wenn eine
+                Aktivität abgebrochen wird, kann sie später oder in einer
+                anderen Sitzung wieder aufgenommen werden.
+              </li>
+              <li>
+                <b>Synchronisationsmarken (Synchronize Minor Token):</b> Sie
+                sind von 0 bis 999.999 durchnummeriert und werden für die
+                Unterteilung der Kommunikation verwendet.
+              </li>
+              <li>
+                <b>Beendigungsmarken (Release Token):</b> Sie legen das Ende
+                einer Sitzung fest
+              </li>
+            </ul>
+            <br />
+            <h3>Sychronisation</h3>
+            <p>
+              Die Synchronisation des Datenaustauschs ist neben der Organisation
+              und Steuerung der Kommunikation eine zweite wichtige Aufgabe, die
+              vom Session Layer übernommen wird. Dies ist vor allem dann
+              wichtig, wenn die Datenübertragung auf der vierten oder den unter
+              der vierten Ebene liegenden Schichten ungewollt und unerwartet
+              abgebrochen wurde.
+            </p>
+            <p>
+              Vom Session Layer werden für diese Fälle Synchronisationspunkte
+              erstellt. Kommt es zu einem Kommunikationsabbruch, dann die
+              Kommunikation wieder ab dem Synchronisationspunkt aufgenommen
+              werden und muss nicht von vorne beginnen. Sollen z. B. 10 Megabyte
+              an Daten übertragen werden und es kommen nur 5 Megabyte an, sorgt
+              die Sitzungsschicht dafür, dass nur die fehlenden 5 MB erneut
+              übertragen werden müssen. So wird die Kommunikation im Netzwerk
+              effizienter, da keine zusätzlichen Ressourcen für das erneute
+              Übertragen der gesamten Datei aufgewendet werden müssen. Das ist
+              vor allem bei der Kommunikation über langsame und instabile
+              Verbindung oder bei besonders großen Daten von großem Vorteil.
+            </p>
+            <p>
+              Die von der Sitzungsschicht vergebenen Synchronisationspunkte
+              können in 2 große Kategorien unterteilt werden
+            </p>
+            <ul>
+              <li>
+                <b>Major-Synchronisationspunkte:</b> Sie unterteilen die Daten,
+                die ausgetauscht werden sollen, in einzelne Einheiten. Sie
+                müssen ausdrücklich bestätigt werden.
+              </li>
+              <li>
+                <b>Minor-Synchronisationspunkte: </b>Sie sorgen innerhalb der
+                Einheiten für eine logische und praktische Struktur. Die
+                Bestätigung ist optional.
+              </li>
+            </ul>
+            <br />
+            <h3>Protokolle, die die Sitzungsschicht nutzen</h3>
+            <p>
+              Zahlreiche Protokolle nutzen die Sitzungsschicht, deren Protokolle
+              und Dienste den höherliegenden Ebenen über
+              Programmierschnittstellen zur Verfügung gestellt werden.
+            </p>
+            <ul>
+              <li>ADSP</li>
+              <li>ASP</li>
+              <li>FTP</li>
+              <li>H.245</li>
+              <li>HTTP</li>
+              <li>ISO-SP</li>
+              <li>iSNS</li>
+              <li>L2F</li>
+              <li>L2TP</li>
+              <li>NetBIOS</li>
+              <li>NNTP</li>
+              <li>PAP</li>
+              <li>PPTP</li>
+              <li>RPC</li>
+              <li>RTCP</li>
+              <li>SCP</li>
+              <li>SDP</li>
+              <li>SMPP</li>
+              <li>SMTP</li>
+              <li>SOCKS</li>
+              <li>Telnet</li>
+              <li>TFTP</li>
+              <li>ZIP</li>
+            </ul>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.computerwoche.de/a/was-ist-das-osi-modell,3552117"
+                  >https://www.computerwoche.de/a/was-ist-das-osi-modell,3552117</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.proofpoint.com/de/threat-reference/osi-model"
+                  >https://www.proofpoint.com/de/threat-reference/osi-model</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ionos.at/digitalguide/server/knowhow/sitzungsschicht"
+                  >https://www.ionos.at/digitalguide/server/knowhow/sitzungsschicht</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--FRAUENDORFER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="application">Was ist der Application Layer?</h2>
+            <p>May 19, 2023 by <a href="#">Melanie Frauendorfer</a></p>
+            <hr />
+            <p>
+              Die siebte Schicht des OSI-Modells ist der Application Layer. Im
+              Deutschen nennt man diesen Layer auch Anwendungsschicht. Diese
+              Ebene interagiert direkt mit den Daten der Nutzer und ist für
+              Protokolle und Datenmanipulation verantwortlich.
+            </p>
+            <img
+              src="https://cf-assets.www.cloudflare.com/slt3lc6tev37/2rcDKpr4WLqoyAZ7GDKkyJ/7cab96402de7ac5465b86e617da3da4e/osi_model_application_layer_7.png"
+              class="img-fluid"
+              alt="Bild, das die Funktion der Anwendungsschicht zeigt."
+            />
+            <br />
+            <h3>Funktionen der Anwendungsschicht</h3>
+            <p>
+              Wenn Daten, wie zum Beispiel eine E-Mail, von der Client-Anwendung
+              empfangen werden, ist es Aufgabe der Anwendungsschicht, diese dem
+              Nutzer entsprechend anzuzeigen und ihm die Interaktion mit den
+              Daten zu ermöglichen. Die Softwareanwendung an sich gehört jedoch
+              nicht in die Anwendungsschicht. Der Application Layer bietet nur
+              unterschiedliche Funktionen an.
+            </p>
+            <ul>
+              <li>
+                Identifikation: Die OSI-Anwendungsschicht ermöglicht die
+                eindeutige Identifizierung der zu erreichenden Seite.
+              </li>
+              <li>
+                Authentifizierung: Die Anwendungsschicht bestimmt den Absender
+                und Empfänger von Nachrichten und sichert deren Authentizität.
+              </li>
+              <li>
+                Analyse: Sie prüft die Voraussetzungen für die Kommunikation
+                zwischen Systemen, wie z.B. eine aktive Netzwerkverbindung.
+              </li>
+              <li>
+                Sicherheit: Der Application Layer stellt sicher, dass die
+                Protokolle und Prozeduren in Bezug auf Privatsphäre,
+                Datenintegrität und Fehlerbehebung eingehalten und abgestimmt
+                werden.
+              </li>
+              <li>
+                Überwachung: Die Anwendungsebene überwacht die Einhaltung der
+                Datensyntaxregeln und des Netzwerkprotokolls während der
+                Interaktion.
+              </li>
+            </ul>
+            <br />
+            <h3>Protokolle, welche die Anwendungsschicht benutzen</h3>
+            <ul>
+              <li>HTTP (Hypertext Transfer Protocol)</li>
+              <li>HTTPS (Hypertext Transfer Protocol)</li>
+              <li>Telnet (Telecommunication Network)</li>
+              <li>SMTP (Simple Mail Transfer Protocol)</li>
+              <li>DNS (Domain Name System)</li>
+              <li>...</li>
+            </ul>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.ionos.at/digitalguide/server/knowhow/anwendungsschicht/"
+                  >https://www.ionos.at/digitalguide/server/knowhow/anwendungsschicht/</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://simpleclub.com/lessons/fachinformatikerin-anwendungsschicht#:~:text=Die%20Anwendungsschicht%20(engl.,Ebenen%20des%20OSI%2DModells%20her."
+                  >https://simpleclub.com/lessons/fachinformatikerin-anwendungsschicht#:~:text=Die%20Anwendungsschicht%20(engl.,Ebenen%20des%20OSI%2DModells%20her.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.cloudflare.com/de-de/learning/ddos/glossary/open-systems-interconnection-model-osi/"
+                  >https://www.cloudflare.com/de-de/learning/ddos/glossary/open-systems-interconnection-model-osi/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--ATZMÜLLER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="csspro">Was sind CSS Processors?</h2>
+            <p>May 20, 2023 by <a href="#AA">Andreas Atzmüller</a></p>
+            <hr />
+            <p>
+              CSS Processors sind Tools oder Softwarebibliotheken, die
+              entwickelt wurden, um die Erstellung von CSS (Cascading Style
+              Sheets) zu erleichtern. Sie erweitern die Funktionalität von CSS
+              und bieten zusätzliche Funktionen, die die Effizienz und
+              Wartbarkeit des CSS-Codes verbessern. Ein CSS Processor nimmt
+              CSS-Code als Eingabe und führt verschiedene Verarbeitungsschritte
+              durch, um den endgültigen CSS-Code zu generieren. Dieser Prozess
+              wird oft als "Kompilieren" bezeichnet, da der CSS Processor den
+              Code in eine optimierte Version umwandelt, die vom Webbrowser
+              interpretiert werden kann.
+            </p>
+            <br />
+            <h3>Welche CSS Processors gibt es?</h3>
+            <h4>
+              <a href="https://sass-lang.com/"
+                >Sass (Syntactically Awesome Style Sheets)</a
+              >
+              <br />
+            </h4>
+            <p>
+              Sass/SCSS ist einer der bekanntesten CSS-Präprozessoren. Er bietet
+              erweiterte Funktionen wie Variablen, Nesting, Mixins und Importe.
+              Sass hat eine klarere und kürzere Syntax im Vergleich zu reinem
+              CSS.
+            </p>
+            <br />
+            <h4>
+              <a href="https://lesscss.org/">Less (Leaner Style Sheets)</a>
+            </h4>
+            <p>
+              Less ist ein CSS-Präprozessor, der ebenfalls Variablen, Mixins und
+              Funktionen unterstützt. Er verwendet eine ähnliche Syntax wie CSS,
+              ergänzt sie jedoch um erweiterte Funktionen.
+            </p>
+            <h4><a href="https://stylus-lang.com/">Stylus</a></h4>
+            <p>
+              Stylus ist ein CSS-Präprozessor mit einer minimalistischen Syntax.
+              Er ermöglicht das Verwenden von Variablen, Funktionen und Mixins
+              und bietet eine sehr flexible und erweiterbare Schreibweise.
+            </p>
+            <h4><a href="https://postcss.org/">PostCSS</a></h4>
+            <p>
+              PostCSS ist ein CSS-Transformer, der auf JavaScript-Plugins
+              basiert. Er ermöglicht Entwicklern, verschiedene Transformationen
+              auf CSS-Code anzuwenden, um beispielsweise den Code zu
+              komprimieren.
+            </p>
+            <br />
+            <h3>
+              Was sind die häufigsten Funktionen und Vorteile von CSS
+              Processors?
+            </h3>
+            <ol>
+              <li>
+                Variablen: CSS Processors ermöglichen die Verwendung von
+                Variablen, um Werte wie Farben, Schriftarten oder Abmessungen zu
+                definieren. Dies erleichtert die Wartung und Anpassung des
+                Designs, da diese Werte an einer zentralen Stelle definiert
+                werden können.
+                <img
+                  src="https://i.imgur.com/6JUTGe0.png"
+                  class="img-fluid"
+                  alt="Variablen"
+                />
+              </li>
+              <li>
+                Nesting: CSS-Regeln können in verschachtelter Form geschrieben
+                werden, was die Lesbarkeit und Strukturierung des Codes
+                verbessert. Anstatt den gesamten Selektor zu wiederholen, können
+                verschachtelte Regeln verwendet werden, um den Code kompakter zu
+                gestalten.
+                <img
+                  src="https://i.imgur.com/uyKXYFc.png"
+                  class="img-fluid"
+                  alt="Nesting"
+                />
+              </li>
+              <li>
+                Mixins: Mixins sind wiederverwendbare Code-Snippets, die in
+                verschiedenen CSS-Regeln verwendet werden können. Sie
+                ermöglichen die Definition von Stilen oder Eigenschaften, die in
+                mehreren Elementen verwendet werden sollen, ohne den Code
+                duplizieren zu müssen.
+                <img
+                  src="https://i.imgur.com/G4hrM37.png"
+                  class="img-fluid"
+                  alt="Mixin01"
+                />
+                <img
+                  src="https://i.imgur.com/bZ5tMDv.png"
+                  class="img-fluid"
+                  alt="Mixin02"
+                />
+                <img
+                  src="https://i.imgur.com/4B8csOj.png"
+                  class="img-fluid"
+                  alt="Mixin03"
+                />
+              </li>
+              <li>
+                Schleifen: Schleifen in CSS-Processors ermöglichen das
+                Wiederholen von CSS-Regeln basierend auf einer vordefinierten
+                Bedingung oder Anzahl. Sie erleichtern die Erzeugung von
+                wiederkehrenden CSS-Code-Blöcken und reduzieren die Duplizierung
+                von Code.
+                <img
+                  src="https://i.imgur.com/LMb9AuR.png"
+                  class="img-fluid"
+                  alt="Schleifen"
+                />
+              </li>
+              <li>
+                Bedingungen: Bedingungen in CSS-Processors bieten die
+                Möglichkeit, Bedingungen zu verwenden, um CSS-Regeln zu
+                überprüfen und basierend auf dem Ergebnis anzuwenden. Dadurch
+                können Stylesheets dynamisch an bestimmte Kriterien oder
+                Zustände angepasst werden.
+                <img
+                  src="https://i.imgur.com/jrCrowP.png"
+                  class="img-fluid"
+                  alt="Bedingung"
+                />
+              </li>
+              <li>
+                Modulare Entwicklung: CSS Processors unterstützen die Aufteilung
+                des CSS-Codes in mehrere Dateien oder Module. Dies erleichtert
+                die Organisation und Wartung des Codes, insbesondere in großen
+                Projekten.
+              </li>
+              <li>Weitere Funktionen und mathematische Operationen...</li>
+            </ol>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://codecoda.com/de/blog/entry/css-pre-processor-sass"
+                  >https://codecoda.com/de/blog/entry/css-pre-processor-sass</a
+                >
+              </li>
+              <li>
+                <a href="https://www.freecodecamp.org/news/css-preprocessors"
+                  >https://www.freecodecamp.org/news/css-preprocessors</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--HINTERSTEINER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="uri" id="uri">URI - URL - URN</h2>
+            <p>May 2023 by <a href="#">Julia Hintersteiner</a></p>
+            <hr />
+            <h3>Wofür stehen die Akronyme?</h3>
+            <ol>
+              <li>
+                <h4>URI - Uniform Resource Identifier</h4>
+                <img
+                  src="https://danielmiessler.com/images/uri-breakdown-2022.png"
+                  class="img-fluid"
+                  alt="Bestandteile einer URI"
+                />
+              </li>
+              <li><h4>URL - Uniform Resource Locator</h4></li>
+              <li><h4>URN - Uniform Resource Name</h4></li>
+            </ol>
+            <br />
+            <h3>Was bedeuten sie und worin liegt der Unterschied?</h3>
+            <p>
+              Generell gilt: alles ist eine URI, URL und URN sind spezielle
+              Formen eines URI.
+            </p>
+            <img
+              src="https://danielmiessler.com/images/URL-URI-Miessler-2022-2048x871.png"
+              class="img-fluid"
+              alt="URL"
+            />
+            <br />
+            <br />
+            <h3>Warum ist das wichtig?</h3>
+            <p>
+              Um die eindeutige Adressierung und Identifikation von Inhalten im
+              Web zu ermöglichen.
+            </p>
+            <br />
+            <h4>Anforderungen an URIs</h4>
+            <ul>
+              <li>Universalität</li>
+              <p>
+                Jede Ressource im Internet soll unabhängig vom
+                Informationsdienst ansprechbar sein.
+              </p>
+              <li>Eindeutigkeit</li>
+              <p>Jede Ressource muss weltweit eindeutig identifizierbar sein</p>
+              <li>Erweiterbarkeit</li>
+              <p></p>
+              <li>Fixierbarkeit</li>
+              <p>
+                URI sollen nicht nur auf elektronischem Weg austauschbar,
+                sondern auch manuell bearbeitbar oder druckbar sein
+              </p>
+            </ul>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=vpYct2npKD8"
+                  >https://www.youtube.com/watch?v=vpYct2npKD8</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=if0pzXWZOfY"
+                  >https://www.youtube.com/watch?v=if0pzXWZOfY</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=YWk9IXmenr8"
+                  >https://www.youtube.com/watch?v=YWk9IXmenr8</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://danielmiessler.com/study/difference-between-uri-url/"
+                  >https://danielmiessler.com/study/difference-between-uri-url/</a
+                >
+              </li>
+              <li>
+                Folien Einführung in die Informatik, Christopher Pollin, WS 2022
+              </li>
+            </ul>
+            <p>Julia Hintersteiner</p>
+          </div>
+        </div>
+
+        <!--DITTMANN-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="frontend">Was ist das Frontend?</h2>
+            <p>May 23, 2023 by <a href="#dittmann">Christina Dittmann</a></p>
+            <hr />
+            <p>
+              Frontend ist das "Sichtbare" einer Website, einer Software oder
+              einer App, mit dem User:innen interagieren. Es bezeichnet somit
+              die gesamte Benutzeroberfläche (client-side). Also beinhaltet dies
+              auch sämtliche Elemente wie buttons, Bilder, Videos, Effekte oder
+              Texte. Das Frontend beschäftigt sich aber auch mit der intuitiven
+              Nutzung einer Website und Barrierefreiheit. Zudem ist es auch
+              wichtig, wie sich die Website verhält, denn verschiedene
+              Bildschirmgrößen oder Browser sorgen jeweils für eine andere
+              Darstellung des Frontends (Responsive Design). Deshalb ist das
+              Verhalten des Frontends sehr zentral, denn das steht buchstäblich
+              im Vordergrund.
+            </p>
+            <img
+              src="https://chromeunboxed.com/wp-content/uploads/2022/02/Devtools-Screenshot-1-1536x864.jpg?ezimgfmt=ng:webp/ngcb93"
+              style="padding: 20px"
+              width="600px"
+              alt="Bild, das das Frontend der Website chromeunboxed darstellt. Rechts neben der Startseite ist der Untersuchungsmodus, in dem man den dahinterliegenden Code sieht, geöffnet."
+            />
+            <br />
+            <h3>Wie implementiert man das Frontend?</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <br />
+            <h4>Libraries und Frameworks</h4>
+            <ul>
+              <li>React</li>
+              <li>Vue</li>
+              <li>jQuery</li>
+              <li>Angular</li>
+            </ul>
+            <br />
+            <h3>Barrierefreiheit</h3>
+            <p>
+              Die Barrierefreiheit, die beim Frontend enorm wichtig ist,
+              beinhaltet beispielsweise Themen wie Bildbeschreibungen,
+              Linktexte, keyboard-only navigation, und Farbkontraste der
+              Elemente. Der Grad der Barrierefreiheit einer Website lässt sich
+              über
+              <a
+                href="https://www.w3.org/WAI/ER/tools/"
+                title="Link zu einer Liste von Evaluierungstools"
+                >Evaluierungstools</a
+              >
+              leicht ermitteln.
+            </p>
+            <br />
+            <h3>Web Design und Implementation</h3>
+            <p>
+              Es lässt sich schon erahnen, dass Frontend auch viel mit Design
+              und der Umsetzung von Layoutvorstellungen zu tun hat. Während
+              Web-Designer:innen das Layout der Seite gestalten (anhand von
+              Sketch, Adobe XD, oder Photoshop), setzen
+              Frontend-Entwickler:innen das Layout mit den oben genannten Tools
+              um. Oft sind aber auch die Grenzen zwischen Web-Designer:innen und
+              Frontend-Entwickler:innen verschwommen.
+            </p>
+            <img
+              src="https://www.frontend-gmbh.de/wp-content/uploads/2016/07/frontend_mix.png"
+              style="padding: 20px"
+              width="600px"
+              alt="Bild, das ein Venn-Diagramm darstellt. Im linken Kreis steht Web Design und im rechten Frontend Development. An der Schnittstelle der beiden Bereichte steht Frontend."
+            />
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.freecodecamp.org/news/frontend-vs-backend-whats-the-difference/"
+                  >freecodecamp.org: Frontend vs Backend - What's the
+                  difference?</a
+                >
+              </li>
+              <li>
+                <a href="https://www.geeksforgeeks.org/frontend-vs-backend/"
+                  >geeksforgeeks.org: Frontend vs Backend</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--ZEBEDIN-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="backend">Was ist ein Backend?</h2>
+            <p>May 20, 2023 by <a href="#juliazebedin">Julia Zebedin</a></p>
+            <hr />
+            <p>
+              Das Backend ist ein wesentlicher Bestandteil der Webentwicklung
+              und spielt eine wichtige Rolle bei der Verarbeitung und
+              Speicherung von Daten sowie bei der Kommunikation mit dem
+              Frontend. Das Backend bezeichnet in der Regel den funktionalen
+              Teil eines digitalen Produkts wie beispielsweise Webseiten oder
+              Apps und bezieht sich meist auf Client Server. Das Frontend bildet
+              die für die Benutzer:innen sichtbare Benutzer:innenoberfläche,
+              wohingegen das Backend für die Benutzer:innen nicht sichtbar ist.
+            </p>
+            <img
+              src="https://www.frontend-gmbh.de/wp-content/uploads/2016/08/frontendbackend.png"
+              class="img-fluid"
+              alt="bildlichee Darstellung von Frontend und Backend"
+              height="300px"
+              width="500px"
+            />
+            <br />
+            <h3>Definition und Aufgaben des Backends</h3>
+            <p>
+              Das Backend umfasst die serverseitige Komponente einer
+              Webanwendung. Es handelt sich um den Teil, der für die
+              Verarbeitung von Daten, die Datenbankkommunikation, die
+              Geschäftslogik und andere Backend-Funktionen verantwortlich ist.
+              <br />Zu den Aufgaben des Backends gehören unter anderem:
+            </p>
+            <ul>
+              <li>Datenverarbeitung und -speicherung</li>
+              <li>Verwaltung und Pflege von Datenbanken</li>
+              <li>Nutzer:innenauthentifizierung und -autorisierung</li>
+              <li>Verwaltung von Benutzer:innendaten</li>
+              <li>
+                Installation von Plugins sowie die Ausführung der nötigen
+                Updates
+              </li>
+              <li>Durchführung von Berechnungen und Algorithmen</li>
+              <li>Einbettung von Inhalten und Medien</li>
+              <li>Integration mit externen Systemen und APIs</li>
+              <li>Fehlerbehandlung und Ausnahmeverwaltung</li>
+              <li>Implementierung der notwendigen Sicherheitsfeatures</li>
+            </ul>
+            <br />
+            <h3>Funktionsweise des Backends</h3>
+            <p>
+              Das Backend empfängt Anfragen vom Frontend, verarbeitet diese und
+              sendet die entsprechenden Daten oder Rückmeldungen zurück. Es
+              arbeitet im Hintergrund und ist für die Logik und die
+              Datenverwaltung verantwortlich. <br />Der Ablauf erfolgt in der
+              Regel wie folgt:
+            </p>
+            <ol>
+              <li>
+                Die Benutzer:innen interagieren mit der Benutzer:innenoberfläche
+                des Frontends.
+              </li>
+              <li>
+                Das Frontend sendet eine Anfrage an das Backend, z. B. um Daten
+                zu laden oder eine Aktion auszuführen.
+              </li>
+              <li>
+                Das Backend verarbeitet die Anfrage, greift auf die
+                erforderlichen Datenbanken oder externen Systeme zu, führt die
+                erforderlichen Operationen aus und generiert eine Antwort.
+              </li>
+              <li>
+                Die Antwort wird vom Backend an das Frontend zurückgesendet, das
+                sie dann entsprechend darstellt.
+              </li>
+            </ol>
+            <br />
+            <h3>Programmier-, Skript- und Datenbanksprachen im Backend</h3>
+            <p>
+              Für die Entwicklung des Backends stehen eine Vielzahl von
+              Programmier- und Skriptsprachen zur Verfügung, die je nach den
+              Anforderungen und Präferenzen des:der Entwicklers:in eingesetzt
+              werden können. <br />Die beliebtesten Programmiersprachen im
+              Backend sind:
+            </p>
+            <img
+              src="https://blog.geekster.in/wp-content/uploads/2022/09/Top-Backend-Programming-Languages-infographic-image.png"
+              class="img-fluid"
+              alt="Icons der gängisten Programmiersprachen im Backend"
+              height="300px"
+              width="500px"
+            />
+            <ul>
+              <li>
+                Java: Eine weit verbreitete Programmiersprache, die für die
+                Entwicklung von robusten und skalierbaren Backends verwendet
+                wird.
+              </li>
+              <li>
+                Python: Eine einfach zu erlernende Sprache mit einer großen
+                Entwicklergemeinschaft und vielen Bibliotheken, die für
+                verschiedene Backend-Aufgaben nützlich sind.
+              </li>
+              <li>
+                PHP: Eine Skriptsprache, die speziell für die Webentwicklung
+                entwickelt wurde und häufig in Kombination mit dem
+                Content-Management-System (CMS) WordPress verwendet wird.
+              </li>
+              <li>
+                Ruby: Eine elegante und benutzer:innenfreundliche Sprache, die
+                im Ruby on Rails-Framework für die Backend-Entwicklung
+                eingesetzt wird.
+              </li>
+              <li>
+                JavaScript: Obwohl JavaScript in erster Linie als Sprache für
+                das Frontend bekannt ist, wird sie auch für serverseitige
+                Entwicklung mit Frameworks wie Node.js eingesetzt.
+              </li>
+              <li>
+                C#: Eine Sprache, die eng mit dem Microsoft-Ökosystem verbunden
+                ist und für die Entwicklung von Backends auf der .NET-Plattform
+                verwendet wird.
+              </li>
+              <li>
+                SQL: Neben der Programmiersprache wird für das Backend auch eine
+                Datenbanksprache benötigt, um Abfragen abrufen zu können, wie
+                zum Beispiel MySQL, oder PostgreSQL.
+              </li>
+            </ul>
+            <br />
+            <h3>Backend-Frameworks</h3>
+            <p>
+              Frameworks bieten Entwickler:innen eine Grundlage, wie eine
+              Vorlage, um schnell Webseiten und Webanwendungen zu erstellen.
+              Sowohl Backend- als auch Frontend-Entwickler:innen nutzen
+              Frameworks, um ihre Arbeitsprozesse zu beschleunigen. <br />Einige
+              der beliebtesten Backend-Entwicklungsframeworks sind:
+            </p>
+            <ul>
+              <li>
+                Django: Ein Open-Source-Framework für vielfältige Anwendungen
+                mit hoher Geschwindigkeit und einer flacheren Lernkurve als
+                andere Frameworks.
+              </li>
+              <li>
+                Spring Boot: Ein leistungsstarkes Framework für Java-Anwendungen
+                mit anpassbaren App-Eigenschaften, Unterstützung von Jetty und
+                Undertow sowie verbessertem Abhängigkeitsmanagement.
+              </li>
+              <li>
+                Laravel: Ein Backend-Framework mit modularem Paketierungssystem,
+                integriertem Abhängigkeitsmanager und besonderer Stärke in der
+                Anbindung an relationale Datenbanken, Live-Kommentare, Caching
+                und API-Vereinfachung.
+              </li>
+              <li>
+                Rails: Ein serverseitiges App-Framework für kosteneffiziente und
+                konsistente Datenbank- und Webseitenstrukturierung, bekannt für
+                seine Benutzer:innenfreundlichkeit und Skalierbarkeit.
+              </li>
+              <li>
+                ExpressJS: Ein flexibles Framework für die Entwicklung von APIs
+                und Anwendungen, das sowohl als Backend- als auch als
+                Frontend-Lösung verwendet werden kann und auf Node.js basiert.
+              </li>
+              <li>
+                ASP.NET: Ein modulares Framework für minimale Programmierung,
+                verbesserte Wartung und plattformübergreifende Unterstützung,
+                das auf C# basiert und eine gute Leistung bietet.
+              </li>
+              <li>
+                CakePHP: Ein PHP-Framework, das sich gut für medienorientierte
+                Webseiten eignet und auf Ruby on Rails basiert. Es konzentriert
+                sich auf Datenmapping, aktive Aufzeichnung und
+                objektrelationales Mapping.
+              </li>
+              <li>
+                Phoenix: Ein Backend-Framework mit Fokus auf hohe Leistung,
+                Skalierbarkeit von Anfang an und verbesserte Produktivität durch
+                erhöhte Fehlertoleranz und schnelle Entwicklung.
+              </li>
+            </ul>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a href="https://it-service.network/it-lexikon/backend"
+                  >https://it-service.network/it-lexikon/backend</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.frontend-gmbh.de/blog/frontend-und-backend/"
+                  >https://www.frontend-gmbh.de/blog/frontend-und-backend/</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ionos.at/digitalguide/websites/webseiten-erstellen/backend-frontend/"
+                  >https://www.ionos.at/digitalguide/websites/webseiten-erstellen/backend-frontend/</a
+                >
+              </li>
+              <li>
+                <a href="https://blog.hubspot.de/website/frontend-backend"
+                  >https://blog.hubspot.de/website/frontend-backend</a
+                >
+              </li>
+              <li>
+                <a href="https://kinsta.com/de/blog/backend-vs-frontend/"
+                  >https://kinsta.com/de/blog/backend-vs-frontend/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--OFENAUER-->
+        <div class="container-fluid">
+          <div class="post">
+            <h2 id="cssframeworks">Was sind CSS-Frameworks?</h2>
+            <p>May 23, 2023 by Johanna Ofenauer</p>
+            <hr />
+            <img
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--vB6UuD8a--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://memegenerator.net/img/instances/53041169/what-is-a-css-framework-anyway.jpg "
+              class="img-fluid"
+              alt="What is a CSS framework anyway?"
+            />
+            <p>
+              Ein CSS Framework ist eine Bibliothek an Stylesheets, die auf eine
+              Website angewendet werden kann.
+            </p>
+            <br />
+            <h3>Vorteile von CSS-Frameworks</h3>
+            <ol>
+              <li>Website stimmt mit Standards überein</li>
+              <li>Andere können den Code leichter lesen</li>
+              <li>Weniger Fehler im Code</li>
+              <li>Einheitliches Aussehen aller HTML-Elemente</li>
+              <li>
+                Tools und Methoden für User-Interface-Komponenten, z.B.
+                Dropdown-Schaltflächen, mehrspaltige Layouts, Icon-Sets,
+                Grid-Strukturen für Responsive Web Design
+              </li>
+            </ol>
+            <br />
+            <h3>Beispiele für CSS-Frameworks</h3>
+            <h4>
+              <a
+                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                >Bootstrap</a
+              >
+            </h4>
+            <img
+              src="https://startingcraft.com/uploads/bootstrap-bootstrap-everywhere.jpg"
+              height="218px"
+              width="400px"
+              class="img-fluid"
+              alt="Bootstrap, Bootstrap everywhere!"
+            />
+            <ul>
+              <li>Am häufigsten verwendetes CSS-Framework im Web</li>
+            </ul>
+            <br />
+            <h4><a href="https://get.foundation/">Foundation</a></h4>
+            <ul>
+              <li>Erstes Framework mit responsive mobile-first Design</li>
+              <li>
+                Verwendete ein auf Flexbox basierendes Grid-Layout lange vor
+                Bootstrap
+              </li>
+              <li>
+                Die User-Interface-Elemente von Foundation und Bootstrap sind
+                sich ähnlich
+              </li>
+            </ul>
+            <br />
+            <h4>
+              <a
+                href="https://github.com/material-components/material-components-web"
+                >Material Components for the Web (MCW)</a
+              >
+            </h4>
+            <ul>
+              <li>Material Design Implementierung</li>
+              <li>
+                Wird von den meisten Google- und Android-Produkten verwendet
+              </li>
+              <li>Schwierig zu personalisieren</li>
+            </ul>
+            <br />
+            <h4><a href="https://materializecss.com/">Materialize</a></h4>
+            <ul>
+              <li>Material Design Implementierung</li>
+              <li>
+                Open-Source-Projekt &rarr; nicht von Google
+                unterstützt/bereitgestellt
+              </li>
+              <li>Ähnliche Struktur wie Bootstrap &rarr; leicht zu lernen</li>
+            </ul>
+            <br />
+            <h4><a href="https://tailwindcss.com/">Tailwind CSS</a></h4>
+            <ul>
+              <li>Sehr anpassungsfähig</li>
+              <li>Hat nicht viele vorgefertigte Komponenten</li>
+              <li>
+                Die Komponenten werden durch die selbständige Kombination von
+                CSS-Klassen erstellt.
+              </li>
+            </ul>
+            <br />
+            <h3>Einbindung eines CSS-Frameworks</h3>
+            <p>
+              Das CSS-Framework wird über das <code>link</code>-Element wie
+              jedes andere Stylesheet mit dem HTML verbunden. Das Framework muss
+              vor dem eigenen Stylesheet eingebunden werden, damit die eigenen
+              Regeln angewendet werden können.<br />Indem man die verkleinerte
+              Version des Frameworks verwendet, kann es schneller geladen
+              werden. Diese Version erkennt man an der Endung
+              <span style="background-color: rgb(242, 242, 129)">.min.css</span
+              >.<br />Der Zugriff auf ein CSS-Framework erfolgt am einfachsten
+              über ein CDN. Die URL für die Datei auf dem CDN-Server wird im
+              <code>href</code>-Attribut des <code>link</code>-Elements
+              angegeben.
+            </p>
+            <code>
+              <p>&lt;!doctype html&gt;</p>
+              <p>&lt;html lang="en"&gt;</p>
+              <p>&lt;head&gt;</p>
+              <p>&lt;meta charset="utf-8"&gt;</p>
+              <p>
+                &lt;meta name="viewport" content="width=device-width,
+                initial-scale=1"&gt;
+              </p>
+              <p>&lt;title&gt;Demo&lt;/title&gt;</p>
+              <p>
+                <span style="background-color: yellow"
+                  >&lt;link href="" rel="stylesheet"&gt;</span
+                >
+              </p>
+              <p>
+                <span style="background-color: yellow"
+                  >&lt;link href="ownStylesheet.css" rel="stylesheet"&gt;</span
+                >
+              </p>
+              <p>&lt;/head&gt;</p>
+              <p>&lt;body&gt;</p>
+              <p>&lt;h1&gt;Hello, world!&lt;/h1&gt;</p>
+              <p>&lt;/body&gt;</p>
+              <p>&lt;/html&gt;</p>
+            </code>
+            <br />
+            <h3>Verwendete Quellen</h3>
+            <ul>
+              <li>
+                <a href="https://info340.github.io/css-frameworks.html"
+                  >https://info340.github.io/css-frameworks.html</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://elementor.com/resources/glossary/what-is-a-css-framework/"
+                  >https://elementor.com/resources/glossary/what-is-a-css-framework/</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.designerinaction.de/tipps-tricks/web-development/css-frameworks/"
+                  >https://www.designerinaction.de/tipps-tricks/web-development/css-frameworks/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--CSUK-->
+        <div class="container-fluid">
+          <div class="post">
+            <div class="row">
+              <div>
+                <br />
+                <h1 class="text" id="cms">Content-Management-System (CMS)</h1>
+                <p>May 23, 2023 by <a>Theresa Csuk</a></p>
+                <hr />
+                <br />
+                <p>
+                  Ein <em>Content-Management-Systeme</em> (CMS) ist eine
+                  Software, mit der Benutzer:innen digitale Inhalte erstellen,
+                  bearbeiten, gemeinsam bearbeiten, veröffentlichen und
+                  speichern können.[1] Anwender:innen können mit einem CMS ohne
+                  Programmierkenntnisse eine Website oder Homepage erstellen und
+                  verwalten. Unternehmen und Privatpersonen verwenden CMS, um
+                  beispielsweise regelmäßig aktuelle Nachrichten oder
+                  Blog-Artikel online zu veröffentlichen, ohne einen
+                  Programmierer/eine Programmiererin engagieren zu müssen.[3]
+                </p>
+              </div>
+              <br />
+              <div>
+                <h2 class="text">CMS - Der Baukasten für Websites</h2>
+                <br />
+                <img
+                  src="https://www.netzsieger.de/media/business/homepage/cms/cms-prinzip_thumb.jpg"
+                  height="300"
+                  width="500"
+                />
+                <br />
+                <br />
+                <p>
+                  Ein CMS ist eine Art "Website-Betriebssystem", es ist in der
+                  Regel eine interaktive Webanwendung (Web-App). User:innen
+                  melden sich auf einer speziellen Login-Seite an, um auf den
+                  Backend-Bereich zuzugreifen. Das Backend ermöglicht die
+                  Konfiguration der Website und die Verwaltung von Inhalten. Im
+                  Gegensatz dazu ist das Frontend der öffentlich zugängliche
+                  Teil der Website, den die Nutzer:innen der Webseite sehen
+                  können. Mit einem CMS entfällt die Notwendigkeit, jede
+                  Änderung einer Webseite mit einem HTML-Editor vorzunehmen und
+                  sie dann auf den Server hochzuladen. Stattdessen können
+                  Änderungen direkt im Backend des CMS vorgenommen werden, indem
+                  man einfach auf "Bearbeiten" klickt und den
+                  benutzerfreundlichen, grafischen Editor verwendet.[4]
+                </p>
+                <br />
+              </div>
+              <div>
+                <h2 class="text">Bekannte Content-Management-Systeme</h2>
+                <p>
+                  Die verschiedenen CMS haben Vor- und Nachteile, über die man
+                  sich vor einer Implementierung informieren sollte. Des
+                  Weiteren können Nutzer:innen zwischen kostenlosen und
+                  kostenpflichtigen Content-Management-Systemen wählen.[2]
+                </p>
+                <p>Zu den beliebtesten Content-Management-Systemen gehören:</p>
+                <ul>
+                  <li>WordPress</li>
+                  <li>Drupal</li>
+                  <li>Wix</li>
+                  <li>Shopify</li>
+                  <li>Magento</li>
+                  <li>Joomla!</li>
+                </ul>
+                <img
+                  src="https://www.sem-deutschland.de/wp-content/uploads/2022/07/beliebte_CMS.png.webp"
+                  height="600"
+                  width="800"
+                />
+                <p>Quelle:[3]</p>
+                <br />
+              </div>
+              <div>
+                <h2 class="text">
+                  Vor- und Nachteile von Content Management-Systemen
+                </h2>
+                <h4>Vorteile</h4>
+                <p></p>
+                <ul>
+                  <li>Leichte Bedienbarkeit</li>
+                  <li>Einfache Suche nach Informationen</li>
+                  <li>Einfaches Verwalten von Inhalten</li>
+                  <li>Von überall aus zugänglich</li>
+                  <li>Erlaubt mehrere Benutzer:innen</li>
+                  <li>Sofortige Inhaltsaktualisierung</li>
+                  <li>Einfach zu skalieren</li>
+                  <li>Einfach zu aktualisieren</li>
+                </ul>
+                <br />
+                <h4>Nachteile</h4>
+                <p></p>
+                <ul>
+                  <li>Einschränkungen bei der Individualisierung</li>
+                  <li>Abhängigkeit von Updates</li>
+                  <li>Potenzielle Performance-Probleme</li>
+                  <li>(Attraktives Ziel für Hacker:innen)</li>
+                </ul>
+                <br />
+                <br />
+              </div>
+              <div>
+                <h2>Beispiel: Shopify</h2>
+                <p>
+                  <a href="https://www.shopify.com/de?wvideo=yabs7tdtif">
+                    <img
+                      src="https://embed-ssl.wistia.com/deliveries/45702413ca12e6f9b507e191fddbea83.jpg?image_play_button_size=2x&amp;image_crop_resized=960x413&amp;image_play_button=1&amp;image_play_button_color=54bbffe0"
+                      style="width: 400px; height: 171.25px"
+                      width="400"
+                      height="171.25"
+                  /></a>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </div>
+            </div>
+            <footer>
+              <p>Quellen:</p>
+              <ul>
+                <li>
+                  [1]
+                  https://wirtschaftslexikon.gabler.de/definition/content-management-system-cms-31303
+                </li>
+                <li>
+                  [2]
+                  https://www.computerweekly.com/de/definition/Content-Management-System-CMS
+                </li>
+                <li>
+                  [3]
+                  https://www.sem-deutschland.de/online-marketing-glossar/cms-content-management-system/#Was_ist_ein_CMS_Was_ist_ein_Content_Management_System
+                </li>
+                <li>
+                  [4] https://www.netzsieger.de/k/content-management-systeme
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+
+        <!--ZANGL-->
+        <div class="container-fluid">
+          <div class="post">
+            <h1 id="javascript">JavaScript</h1>
+            <p>May 2023 by <a href="#TZ">Thomas Zangl</a></p>
+            <hr />
+            <p>
+              JavaScript ist eine 1995 erfundene turing-vollständige
+              Skriptsprache und wird primär im Bereich der Webentwicklung
+              eingesetzt. Sie ist neben Python eine der beliebtesten und
+              weitesten verbreiteten Programmiersprachen. Mit der
+              Programmiersprache Java hat JavaScript trotz des ähnlichen Namens
+              quasi nichts gemein - man erhoffte sich damals einen
+              Marketingvorteil, da Java in der damaligen Zeit äußerst populär
+              war. Zuvor trug JavaScript den Namen Mocha, dann LiveScript, bevor
+              sie schlussendlich JavaScript genannt wurde. Generell kann
+              JavaScript der Gruppe der objektorientierten Programmiersprachen
+              zugeordnet werden.
+            </p>
+            <p>
+              Im Allgemeinen ist JavaScript eine sehr liberale
+              Programmiersprache, die oftmals kleine Ungenauigkeiten verzeiht,
+              die es BeginnerInnen erleichtern soll, in der Webentwicklung Fuß
+              zu fassen - ganz so leicht ist es allerdings auch nicht. Von
+              JavaScript gibt es ständig neue Updates, weswegen die diversen
+              Brwoser ebenso stets am neuesten Stand der Technik sein müssen, um
+              weiterhin mit JavaScript kompatibel zu sein. Wichtig ist hierbei
+              zu erwähnen, dass die Updates so konzipiert sind, dass die älteren
+              bereits existierenden Programme dennoch weiterhin bestehen und
+              funktionstüchtig bleiben.
+            </p>
+            <p>
+              Generell beinhaltet JavaScript verschiedene Funktionen, wie die
+              Möglichkeit, dynamische Webseiten zu erstellen, Webseiteninhalte
+              zu manipulieren oder clientseitige Validierungen durchzuführen.
+              Weiters kann es verwendet werden, um interaktive
+              Benutzeroberflächen wie Dropdown-Menüs, Pop-up-Boxen und andere
+              grafische Benutzeroberflächenelemente zu erstellen. Der bestehende
+              HTML Code von Webseiten kann somit mittels JavaScript dynamischer
+              konzipiert und erweitert werden. JavaScript wird von Webbrowsern
+              ausgeführt und kann direkt in den HTML-Code eingebettet oder in
+              externen Files geschrieben und anschließend miteingebunden werden.
+              Darüberhinaus wird JavaScript häufig in Verbindung mit anderen
+              Webentwicklungsframeworks wie AngularJS oder jQuery verwendet, um
+              den Entwicklungsprozess zu vereinfachen und zu optimieren. Neben
+              seinem Einsatz in der Webentwicklung hat JavaScript auch in
+              anderen Bereichen wie der Serverseitenprogrammierung, der
+              Entwicklung von mobilen Apps und der Spieleentwicklung an
+              Bedeutung gewonnen. Mit dem Aufstieg von Technologien wie Node.js
+              und React Native ist JavaScript zu einer vielseitigen Sprache
+              geworden, die auf mehreren Plattformen eingesetzt werden kann.
+              Insgesamt ist JavaScript somit eine leistungsstarke und
+              vielseitige Programmiersprache, die einen erheblichen Einfluss auf
+              die Webentwicklungsbranche hat. Ihre Fähigkeit, interaktive und
+              dynamische Webseiten zu erstellen, sowie ihre Vielseitigkeit auf
+              mehreren Plattformen haben sie zu einem unverzichtbaren Werkzeug
+              für EntwicklerInnen auf der ganzen Welt gemacht.
+            </p>
+            <br />
+            <h2>Die Aufgaben von JavaScript:</h2>
+            <ul>
+              <li>
+                dynamische Manipulation von Webseiten über Document Object Model
+                (DOM) - CSS/HTML
+              </li>
+              <li>Anzeige von Dialogfenstern</li>
+              <li>Vorschlagen von Suchbegriffen während Eingabe</li>
+              <li>Anzeige von Dialogfenstern</li>
+              <li>
+                Senden und Empfangen von Daten, ohne dass der Browser die Seite
+                neu laden muss (Ajax)
+              </li>
+              <li>Validierung von daten in Formulareingaben</li>
+              <li>
+                Schreib- und Lesezugriff auf Cookies &amp Web Storage innerhalb
+                vom Browser
+              </li>
+            </ul>
+            <p>
+              JavaScript ermöglicht es einem somit dynamische Inhalte in
+              Webseiten einzubauen, was mittels CSS und HTML nicht möglich ist.
+              So werden etwa Warenkörbe von Onlineanbietern mittels JavaScript
+              programmiert.
+            </p>
+            <br />
+            <h2>Datentypen in JavaScript:</h2>
+            <ul>
+              <li>
+                Primitive Datentypen: strings, number, boolean, symbol,
+                undefined
+              </li>
+              <li>Nicht primitive Datentypen: function, object</li>
+            </ul>
+            <p>
+              Variablen werden in JavaScript mittels
+              <em>let</em> beziehungsweise <em>var</em> ausgewiesen. Beide
+              Variablen sind nicht allgemeingültig sondern bloß innerhalb eines
+              Scopes. Dabei ist let die eingrenzendere Option, die es sich auch
+              empfiehlt zu verwenden. Konstanten werden hier mittels
+              <em>const</em> deklariert.
+            </p>
+            <br />
+            <h2>Diverse vordefinierte Objekttypen:</h2>
+            <ul>
+              <li>Object</li>
+              <li>Function</li>
+              <li>Array</li>
+              <li>String</li>
+              <li>Boolean</li>
+              <li>Number</li>
+              <li>Date - für Datumsformate</li>
+              <li>RegExp - für reguläre Ausdrücke</li>
+              <li>Error</li>
+              <li>
+                Math - für Konstanten und Methoden für mathematische Operationen
+              </li>
+              <li>JSON</li>
+              <li>
+                Reflect - Methoden für Ermittlung und Änderung von Metadaten
+                eines Objekts
+              </li>
+            </ul>
+            <br />
+            <h2>Document Object Model:</h2>
+            <p>
+              Sobald eine Webseite geladen wird kreiert der Browser ein
+              sogenanntes Document Object Model (DOM). Damit kann nun mittels
+              JavaScript eine dynamische HTML-Seite generiert werden.
+            </p>
+            <img
+              src="https://www.w3schools.com/js/pic_htmltree.gif"
+              alt="HTML DOM"
+            />
+            <p>
+              Mit Hilfe von Frameworks und Bibliotheken auf die in JavaScript
+              zugegriffen werden kann, wird die Entwicklung von Webseiten
+              maßgeblich erleichtert. Dabei können ganz simpel bereits
+              bestehende Funktionen und Features in den eigenen Code
+              implementiert werden.
+            </p>
+            <br />
+            <h2>Beispiele von JavaScript Bibliotheken und Frameworks:</h2>
+            <ul>
+              <li>jQuery</li>
+              <li>jQuery UI</li>
+              <li>Zepto</li>
+              <li>CreateJS</li>
+              <li>React</li>
+              <li>AngularJS</li>
+              <li>Angular</li>
+              <li>Ember.js</li>
+            </ul>
+            <br />
+            <h3>Verwendete Quellen:</h3>
+            <ul>
+              <li>
+                <a href="https://de.wikipedia.org/wiki/JavaScript#Datentypen"
+                  >https://de.wikipedia.org/wiki/JavaScript#Datentypen</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/default.asp"
+                  >https://www.w3schools.com/default.asp</a
+                >
+              </li>
+              <li>
+                <a href="https://eloquentjavascript.net/00_intro.html"
+                  >https://eloquentjavascript.net/00_intro.html</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ionos.at/digitalguide/websites/web-entwicklung/beliebte-javascript-frameworks-und-bibliotheken/"
+                  >https://www.ionos.at/digitalguide/websites/web-entwicklung/beliebte-javascript-frameworks-und-bibliotheken/</a
+                >
+              </li>
+              <li>
+                <a href="https://kinsta.com/de/blog/javascript-bibliotheken/"
+                  >https://kinsta.com/de/blog/javascript-bibliotheken/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

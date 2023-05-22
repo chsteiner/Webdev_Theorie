@@ -11315,3 +11315,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+.container-fluid {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  text-align: justify;
+  border: solid 1px;
+}
